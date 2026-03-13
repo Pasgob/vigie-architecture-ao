@@ -8,15 +8,27 @@ on:
 jobs:
   vigie:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
+
       - name: Installer dependances
-        run: pip install anthropic requests beautifulsoup4 aiohttp tenacity
+        run: pip install anthropic lxml
+
       - name: Lancer la vigie
-        run: pip install anthropic lxml && python vigie_v2.py
+        run: python vigie_v2.py
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           SMTP_HOST: smtp.office365.com
           SMTP_PORT: 587
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASS: ${{ secrets.SMTP_PASS }}
+
+      - name: Sauvegarder data.json
+        run: |
+          git config user.name "Vigie Bot"
+          git config user.email "vigie@abcparchitecture.com"
+          git add data.json
+          git diff --staged --quiet || git commit -m "Update data.json"
+          git push
