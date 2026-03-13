@@ -2,23 +2,21 @@ name: Vigie Architecture
 
 on:
   schedule:
-    - cron: '0 8-17 * * 1-5'  # Toutes les heures, lun-ven, 8h-17h EST
-  workflow_dispatch:            # Bouton "Run manual" dans GitHub
+    - cron: '0 8-17 * * 1-5'
+  workflow_dispatch:
 
 jobs:
   vigie:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - name: Installer les dépendances
+      - name: Installer dependances
         run: pip install anthropic requests beautifulsoup4 aiohttp tenacity
-
       - name: Lancer la vigie
-        run: python vigie_agentic.py
+        run: python vigie_v2.py
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          SMTP_HOST:         smtp.office365.com
-          SMTP_PORT:         587
-          SMTP_USER:         ${{ secrets.SMTP_USER }}
-          SMTP_PASS:         ${{ secrets.SMTP_PASS }}
+          SMTP_HOST: smtp.office365.com
+          SMTP_PORT: 587
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
