@@ -75,12 +75,18 @@ class DeduplicationStore:
 # ─── Utilitaires HTTP ─────────────────────────────────────────────────────────
 
 def http_get(url, timeout=30):
+    import gzip
     req = Request(url, headers={
         "User-Agent": "VigieArchitecture/4.0 (ABCP Architecture; pasgob@abcparchitecture.com)",
         "Accept": "application/json, application/xml, text/xml, */*",
+        "Accept-Encoding": "gzip, deflate",
     })
     with urlopen(req, timeout=timeout) as r:
-        return r.read().decode("utf-8")
+        raw = r.read()
+        encoding = r.headers.get("Content-Encoding", "")
+        if encoding == "gzip":
+            raw = gzip.decompress(raw)
+        return raw.decode("utf-8")
 
 # ─── Source 1 : SEAO via API ouverte donneesquebec.ca ────────────────────────
 
