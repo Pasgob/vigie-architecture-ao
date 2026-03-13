@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vigie Architecture — ABCP</title>
+<style>
+  body{font-family:Arial,sans-serif;background:#0f1117;color:#e2e8f0;margin:0;padding:0}
+  header{background:#1a1f2e;padding:16px 24px;border-bottom:1px solid #1e293b;position:sticky;top:0;z-index:10}
+  h1{margin:0;font-size:18px;color:#f1f5f9}
+  .sub{font-size:11px;color:#64748b;letter-spacing:.08em}
+  .stats{display:flex;gap:24px;margin-top:8px}
+  .stat{text-align:center}
+  .stat-val{font-size:22px;font-weight:800}
+  .stat-lbl{font-size:9px;letter-spacing:.12em;color:#475569}
+  .container{padding:20px 24px}
+  .filters{display:flex;gap:12px;margin-bottom:16px;flex-wrap:wrap}
+  input,select{background:#161b27;border:1px solid #1e293b;border-radius:6px;color:#e2e8f0;padding:8px 10px;font-size:12px;font-family:Arial}
+  .card{background:#161b27;border:1px solid #1e293b;border-radius:10px;padding:14px 16px;margin-bottom:8px;cursor:pointer;transition:border-color .15s}
+  .card:hover{border-color:#334155}
+  .card-header{display:flex;align-items:center;gap:8px;margin-bottom:6px;flex-wrap:wrap}
+  .badge{font-size:9px;font-weight:700;padding:2px 7px;border-radius:4px;letter-spacing:.08em}
+  .URGENT{background:#fef2f2;color:#b91c1c}
+  .PRIORITAIRE{background:#fff7ed;color:#c2410c}
+  .NORMAL{background:#f0fdf4;color:#15803d}
+  .src{font-size:9px;color:#fff;padding:2px 7px;border-radius:4px;font-weight:600}
+  .card-title{font-size:14px;font-weight:600;color:#f1f5f9;margin-bottom:4px}
+  .card-meta{font-size:11px;color:#64748b;display:flex;gap:16px;flex-wrap:wrap}
+  .card-right{text-align:right;white-space:nowrap}
+  .days{font-size:13px;font-weight:700}
+  .updated{font-size:10px;color:#334155;text-align:right;margin-bottom:12px}
+  .modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:100;align-items:center;justify-content:center;padding:24px}
+  .modal.open{display:flex}
+  .modal-box{background:#161b27;border:1px solid #1e293b;border-radius:16px;padding:28px;max-width:560px;width:100%;max-height:90vh;overflow-y:auto}
+  .modal-row{display:flex;gap:12px;margin-bottom:8px;font-size:13px}
+  .modal-key{color:#475569;width:90px;flex-shrink:0}
+  .btn{display:inline-block;background:#1d4ed8;color:#fff;padding:10px 20px;border-radius:8px;text-decoration:none;font-size:12px;font-weight:700;border:none;cursor:pointer}
+  .empty{text-align:center;color:#475569;padding:60px 0;font-size:13px}
+  .card-layout{display:grid;grid-template-columns:1fr auto;gap:4px 16px;align-items:start}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🏛 Vigie Architecture <span style="font-weight:300;color:#475569">— ABCP</span></h1>
+  <div class="sub">APPELS D'OFFRES EN TEMPS RÉEL · SEAO · BUYSELL-CA</div>
+  <div class="stats">
+    <div class="stat"><div class="stat-val" id="s-total" style="color:#94a3b8">—</div><div class="stat-lbl">TOTAL</div></div>
+    <div class="stat"><div class="stat-val" id="s-urgent" style="color:#ef4444">—</div><div class="stat-lbl">URGENT</div></div>
+    <div class="stat"><div class="stat-val" id="s-qc" style="color:#1d4ed8">—</div><div class="stat-lbl">QUÉBEC</div></div>
+  </div>
+</header>
+
+<div class="container">
+  <div class="updated" id="updated">Chargement…</div>
+  <div class="filters">
+    <input id="search" placeholder="Rechercher…" oninput="render()" style="width:200px">
+    <select id="f-urgency" onchange="render()">
+      <option value="">Toute urgence</option>
+      <option>URGENT</option><option>PRIORITAIRE</option><option>NORMAL</option>
+    </select>
+    <select id="f-source" onchange="render()">
+      <option value="">Toute source</option>
+      <option>SEAO</option><option>BuySell-CA</option>
+    </select>
+    <select id="f-province" onchange="render()">
+      <option value="">Toute province</option>
+      <option>QC</option><option>NB</option><option>NS</option><option>ON</option>
+    </select>
+  </div>
+  <div id="list"></div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal" onclick="closeModal(event)">
+  <div class="modal-box" id="modal-box"></div>
+</div>
+
+<script>
+let ALL = [];
+const SRC_COLORS = {SEAO:'#1e40af','BuySell-CA':'#7c3aed'};
+
+function daysLeft(d){
+  if(!d) return null;
+  return Math.max(0, Math.ceil((new Date(d)-new Date())/86400000));
+}
+function urgency(d){
+  const n=daysLeft(d);
+  if(n===null) return 'NORMAL';
+  if(n<=7) return 'URGENT';
+  if(n<=14) return 'PRIORITAIRE';
+  return 'NORMAL';
+}
+function fmtDate(d){
+  if(!d) return 'N/D';
+  return new Date(d).toLocaleDateString('fr-CA',{day:'2-digit',month:'short',year:'numeric'});
+}
+function fmtBudget(b){
+  if(!b) return 'N/D';
+  return '$'+(b/1e6).toFixed(1)+' M';
+}
+
+async function load(){
+  try{
+    const r = await fetch('data.json?t='+Date.now());
+    const data = await r.json();
+    ALL = data.projects || [];
+    document.getElementById('updated').textContent =
+      'Dernière mise à jour : '+new Date(data.updated_at).toLocaleString('fr-CA');
+    document.getElementById('s-total').textContent = ALL.length;
+    document.getElementById('s-urgent').textContent = ALL.filter(p=>urgency(p.closing_date)==='URGENT').length;
+    document.getElementById('s-qc').textContent = ALL.filter(p=>p.province==='QC').length;
+    render();
+  } catch(e){
+    document.getElementById('list').innerHTML =
+      '<div class="empty">⚠️ Données non disponibles.<br>Le premier cycle GitHub Actions doit s\'être complété.</div>';
+    document.getElementById('updated').textContent = '';
+  }
+}
+
+function render(){
+  const q = document.getElementById('search').value.toLowerCase();
+  const fu = document.getElementById('f-urgency').value;
+  const fs = document.getElementById('f-source').value;
+  const fp = document.getElementById('f-province').value;
+
+  let list = ALL.filter(p=>{
+    if(fu && urgency(p.closing_date)!==fu) return false;
+    if(fs && p.source!==fs) return false;
+    if(fp && p.province!==fp) return false;
+    if(q && !`${p.title} ${p.owner} ${p.province}`.toLowerCase().includes(q)) return false;
+    return true;
+  }).sort((a,b)=>(a.closing_date||'9999').localeCompare(b.closing_date||'9999'));
+
+  const el = document.getElementById('list');
+  if(!list.length){
+    el.innerHTML='<div class="empty">🔍 Aucun résultat.</div>';
+    return;
+  }
+
+  el.innerHTML = list.map((p,i)=>{
+    const urg = urgency(p.closing_date);
+    const dl = daysLeft(p.closing_date);
+    const sc = SRC_COLORS[p.source]||'#64748b';
+    return `<div class="card" onclick="openModal(${i}_${ALL.indexOf(p)})">
+      <div class="card-layout">
+        <div>
+          <div class="card-header">
+            <span class="badge ${urg}">${urg}</span>
+            <span class="src" style="background:${sc}">${p.source}</span>
+            <span style="font-size:11px;color:#475569">${p.province||'?'}</span>
+          </div>
+          <div class="card-title">${p.title||'Sans titre'}</div>
+          <div class="card-meta">
+            <span>🏢 ${p.owner||'N/D'}</span>
+            ${p.estimated_budget?`<span>💰 ${fmtBudget(p.estimated_budget)}</span>`:''}
+          </div>
+        </div>
+        <div class="card-right">
+          <div class="days" style="color:${urg==='URGENT'?'#ef4444':urg==='PRIORITAIRE'?'#f97316':'#22c55e'}">${dl!==null?dl+' j':'N/D'}</div>
+          <div style="font-size:10px;color:#475569">${fmtDate(p.closing_date)}</div>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+
+  // Fix onclick avec index global
+  el.querySelectorAll('.card').forEach((card,i)=>{
+    const p = list[i];
+    card.onclick = ()=>openModalData(p);
+  });
+}
+
+let currentP = null;
+function openModalData(p){
+  currentP = p;
+  const urg = urgency(p.closing_date);
+  const dl = daysLeft(p.closing_date);
+  document.getElementById('modal-box').innerHTML = `
+    <div style="display:flex;justify-content:space-between;align-items:start;margin-bottom:16px">
+      <span class="badge ${urg}" style="font-size:11px;padding:4px 10px">${urg} — ${dl!==null?dl+' jour(s)':'N/D'}</span>
+      <button onclick="document.getElementById('modal').classList.remove('open')" style="background:none;border:none;color:#64748b;font-size:20px;cursor:pointer">✕</button>
+    </div>
+    <h2 style="font-size:16px;font-weight:700;color:#f1f5f9;margin:0 0 16px">${p.title||'Sans titre'}</h2>
+    ${[['Client',p.owner],['Province',p.province],['Budget',fmtBudget(p.estimated_budget)],
+       ['Clôture',fmtDate(p.closing_date)],['Source',p.source],['Catégorie',p.category]]
+      .filter(([,v])=>v&&v!=='N/D'&&v!=='null')
+      .map(([k,v])=>`<div class="modal-row"><div class="modal-key">${k}</div><div>${v}</div></div>`).join('')}
+    ${p.summary?`<div style="background:#0f1117;border:1px solid #1e293b;border-radius:8px;padding:12px;font-size:12px;color:#94a3b8;line-height:1.6;margin-top:12px">${p.summary}</div>`:''}
+    <div style="margin-top:20px;display:flex;gap:10px">
+      ${p.url?`<a href="${p.url}" target="_blank" class="btn">OUVRIR LA SOURCE →</a>`:''}
+    </div>`;
+  document.getElementById('modal').classList.add('open');
+}
+
+function closeModal(e){
+  if(e.target===document.getElementById('modal'))
+    document.getElementById('modal').classList.remove('open');
+}
+
+load();
+setInterval(load, 300000); // Rafraîchit toutes les 5 min
+</script>
+</body>
+</html>
+```
+
+Commit → **Save**
+
+Ensuite dis-moi quand c'est fait — ton URL sera :
+```
+pasgob.github.io/vigie-architecture-ao
