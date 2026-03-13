@@ -241,6 +241,8 @@ def fetch_buyandsell(since: datetime) -> list[dict]:
     for url in urls:
         try:
             raw = http_get(url, timeout=30)
+            import re
+            raw = re.sub(r'&(?!amp;|lt;|gt;|quot;|apos;)', '&amp;', raw)
             root = ET.fromstring(raw)
             entries = root.findall("atom:entry", ns)
             logging.info(f"[BuySell] {len(entries)} entrées depuis {url}")
