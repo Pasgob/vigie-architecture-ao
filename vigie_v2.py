@@ -180,14 +180,8 @@ def fetch_seao(since: datetime) -> list[dict]:
                 except Exception:
                     closing_date = datetime.now() + timedelta(days=30)
 
-                # Date de publication — filtre temporel
-                pub_raw = release.get("date", "")
-                try:
-                    pub_date = datetime.strptime(pub_raw[:10], "%Y-%m-%d")
-                    if pub_date < since:
-                        continue
-                except Exception:
-                    pass  # Si pas de date, inclure
+                # Filtre temporel désactivé — fichier hebdo déjà récent
+                pass
 
                 # Description / catégorie
                 description = tender.get("description", "")
