@@ -372,7 +372,10 @@ JSON requis :
             return {}
         text = text.replace("```json", "").replace("```", "").strip()
         return json.loads(text)
-
+    except Exception as e:
+        logging.warning(f"[Claude] {e}")
+        return {}
+        
 # ─── Rapport HTML ─────────────────────────────────────────────────────────────
 
 def build_html(projects: list) -> str:
