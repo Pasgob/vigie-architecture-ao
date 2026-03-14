@@ -274,6 +274,7 @@ def fetch_canadabuys(since: datetime) -> list[dict]:
     except Exception as e:
         logging.error(f"[CanadaBuys] Erreur : {e}")
     return projects
+    
 def fetch_buyandsell(since: datetime) -> list[dict]:
     """Marchés fédéraux canadiens — flux Atom officiel du gouvernement du Canada."""
     import xml.etree.ElementTree as ET
