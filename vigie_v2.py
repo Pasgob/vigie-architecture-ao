@@ -227,7 +227,13 @@ def fetch_canadabuys(since: datetime) -> list[dict]:
     projects = []
     PROVINCES_CIBLES = {"NB", "NS", "PE", "ON", "NL", "QC"}
     try:
-        raw = http_get(url, timeout=60)
+        import ssl
+        ctx = ssl.create_default_context()
+        ctx.check_hostname = False
+        ctx.verify_mode = ssl.CERT_NONE
+        from urllib.request import urlopen as ssl_urlopen
+        with ssl_urlopen(url, timeout=60, context=ctx) as r:
+            raw = r.read().decode("utf-8")
         reader = csv.DictReader(io.StringIO(raw))
         for row in reader:
             try:
@@ -361,10 +367,11 @@ JSON requis :
             max_tokens=150,
             messages=[{"role": "user", "content": prompt}],
         )
-        return json.loads(resp.content[0].text.strip())
-    except Exception as e:
-        logging.warning(f"[Claude] {e}")
-        return {}
+        text = resp.content[0].text.strip()
+        if not text:
+            return {}
+        text = text.replace("```json", "").replace("```", "").strip()
+        return json.loads(text)
 
 # ─── Rapport HTML ─────────────────────────────────────────────────────────────
 
