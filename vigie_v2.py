@@ -220,6 +220,55 @@ def fetch_seao(since: datetime) -> list[dict]:
 
 # ─── Source 2 : buyandsell.gc.ca (Atom/RSS officiel fédéral) ─────────────────
 
+def fetch_canadabuys(since: datetime) -> list[dict]:
+    """CanadaBuys — open data CSV fédéral, mis à jour toutes les 2h."""
+    import csv, io
+    url = "https://donnees-data.tpsgc-pwgsc.gc.ca/ba2/aev-bas/appeloffresnouveaux-tendernoticesnew.csv"
+    projects = []
+    PROVINCES_CIBLES = {"NB", "NS", "PE", "ON", "NL", "QC"}
+    try:
+        raw = http_get(url, timeout=60)
+        reader = csv.DictReader(io.StringIO(raw))
+        for row in reader:
+            try:
+                title = (row.get("title-titre") or row.get("description-eng") or "")
+                province = (row.get("deliveryProvince-livraisonProvince") or
+                            row.get("provinceCode-codeProvince") or "?")
+                org = row.get("organizationName-nom-eng", "")
+                if province not in PROVINCES_CIBLES:
+                    continue
+                if not is_architecture_related(title, ""):
+                    continue
+                pub_raw = row.get("publicationDate-datePublication", "")
+                try:
+                    pub_date = datetime.strptime(pub_raw[:10], "%Y-%m-%d")
+                    if pub_date < since:
+                        continue
+                except Exception:
+                    pass
+                ref_id = row.get("referenceNumber-numeroReference", "")
+                closing_raw = row.get("closingDate-dateCloture", "")
+                fp = hashlib.sha256(
+                    f"CanadaBuys_{ref_id}_{title[:40]}".encode()
+                ).hexdigest()[:16]
+                projects.append({
+                    "fingerprint":      fp,
+                    "title":            title,
+                    "url":              f"https://buyandsell.gc.ca/procurement-data/tender-notice/{ref_id}",
+                    "summary":          row.get("description-eng", "")[:400],
+                    "source":           "CanadaBuys",
+                    "province":         province,
+                    "owner":            org or "N/D",
+                    "category":         "Architecture",
+                    "closing_date":     closing_raw[:10] if closing_raw else None,
+                    "estimated_budget": None,
+                })
+            except Exception as e:
+                logging.debug(f"[CanadaBuys] Ligne ignorée : {e}")
+        logging.info(f"[CanadaBuys] {len(projects)} AOs trouvés")
+    except Exception as e:
+        logging.error(f"[CanadaBuys] Erreur : {e}")
+    return projects
 def fetch_buyandsell(since: datetime) -> list[dict]:
     """Marchés fédéraux canadiens — flux Atom officiel du gouvernement du Canada."""
     import xml.etree.ElementTree as ET
@@ -431,7 +480,7 @@ def run():
     # Collecte toutes les sources
     all_items = []
     all_items += fetch_seao(since)
-    all_items += fetch_buyandsell(since)
+    all_items += fetch_canadabuys(since)
     logging.info(f"Total brut : {len(all_items)} items")
 
     for item in all_items:
