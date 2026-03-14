@@ -191,8 +191,7 @@ def fetch_seao(since: datetime) -> list[dict]:
                     category = items[0].get("classification", {}).get("description", "")
 
                 # Lien vers SEAO
-                ao_url = f"https://www.seao.ca/OpportunityPublication/AO/Details/{ref_id.split('-')[-1]}"
-
+                ao_url = f"https://www.seao.ca/OpportunityPublication/rechercheAO/Details/Avis?id={ref_id}"
                 fp = hashlib.sha256(f"SEAO_{ref_id}_{title[:40]}".encode()).hexdigest()[:16]
 
                 projects.append({
@@ -223,7 +222,7 @@ def fetch_seao(since: datetime) -> list[dict]:
 def fetch_canadabuys(since: datetime) -> list[dict]:
     """CanadaBuys — open data CSV fédéral, mis à jour toutes les 2h."""
     import csv, io
-    url = "https://donnees-data.tpsgc-pwgsc.gc.ca/ba2/aev-bas/appeloffresnouveaux-tendernoticesnew.csv"
+    url = "https://canadabuys.canada.ca/opendata/pub/tenders/tenderNotice_avisAppelOffres.csv"
     projects = []
     PROVINCES_CIBLES = {"NB", "NS", "PE", "ON", "NL", "QC"}
     try:
@@ -347,30 +346,43 @@ def is_architecture_related(title: str, summary: str) -> bool:
 
 def analyse_with_claude(item: dict) -> dict:
     client = anthropic.Anthropic(api_key=CONFIG["anthropic_api_key"])
-    prompt = f"""Appel d'offres canadien. Extrais en JSON strict (null si inconnu).
+    prompt = f"""Tu es un agent d'analyse d'appels d'offres pour ABCP Architecture, cabinet d'architecture au Québec.
 
 TITRE : {item['title']}
-RÉSUMÉ : {item.get('summary','')[:600]}
+RÉSUMÉ : {item.get('summary','')[:800]}
 SOURCE : {item['source']}
+PROVINCE : {item.get('province','?')}
 
-JSON requis :
+Extrais en JSON strict (null si inconnu) :
 {{
-  "province": "Code 2 lettres ou null",
-  "estimated_budget": null ou nombre entier $,
-  "closing_date": "YYYY-MM-DD ou null",
+  "province": "Code 2 lettres",
+  "estimated_budget": null ou nombre entier en dollars,
+  "closing_date": "YYYY-MM-DD",
   "owner": "Organisation cliente",
-  "pertinent": true/false
+  "pertinent": true ou false,
+  "prix": "Oui" si soumission de prix requise, "Non" si concours ou qualifications seulement,
+  "entrevue": "Oui" si entrevue mentionnée, "Non" sinon, null si inconnu,
+  "visite_obligatoire": "Oui" ou "Non" ou null,
+  "date_visite": "YYYY-MM-DD" ou null,
+  "format": "Format lettre" ou "Formulaire imposé" ou "Format libre" ou null,
+  "categorie_ao": "OS à discuter" si budget inconnu ou >10M$, "OS à surveiller" si budget <5M$ ou délai >60 jours,
+  "cote_strategique": "A" si client institutionnel majeur ou budget >20M$, "B" si client municipal ou budget 5-20M$, "C" si budget <5M$,
+  "resume_comite": "1 phrase max résumant l'essentiel pour le comité stratégique ABCP"
 }}"""
     try:
         resp = client.messages.create(
             model=CONFIG["claude_model"],
-            max_tokens=150,
+            max_tokens=400,
             messages=[{"role": "user", "content": prompt}],
         )
         text = resp.content[0].text.strip()
         if not text:
             return {}
         text = text.replace("```json", "").replace("```", "").strip()
+        start = text.find("{")
+        end = text.rfind("}") + 1
+        if start >= 0 and end > start:
+            text = text[start:end]
         return json.loads(text)
     except Exception as e:
         logging.warning(f"[Claude] {e}")
@@ -523,8 +535,21 @@ def run():
                 logging.debug(f"Sous seuil ({province} {budget:,}$) : {item['title'][:50]}")
                 continue
 
-        project = {**item, "province": province, "estimated_budget": budget,
-                   "closing_date": closing, "owner": owner}
+        project = {
+            **item,
+            "province":           province,
+            "estimated_budget":   budget,
+            "closing_date":       closing,
+            "owner":              owner,
+            "prix":               analysis.get("prix"),
+            "entrevue":           analysis.get("entrevue"),
+            "visite_obligatoire": analysis.get("visite_obligatoire"),
+            "date_visite":        analysis.get("date_visite"),
+            "format_ao":          analysis.get("format"),
+            "categorie_ao":       analysis.get("categorie_ao"),
+            "cote_strategique":   analysis.get("cote_strategique"),
+            "resume_comite":      analysis.get("resume_comite"),
+        }
         retained.append(project)
         dedup.mark(item["fingerprint"], item["source"], item["title"])
         logging.info(f"✓ [{item['source']}] {item['title'][:70]}")
