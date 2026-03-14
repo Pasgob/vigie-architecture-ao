@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-14T16:57:00.756813",
-  "count": 94,
+  "updated_at": "2026-03-14T18:06:43.975928",
+  "count": 93,
   "projects": [
     {
       "fingerprint": "c3de0b769a8929a5",
@@ -9,7 +9,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Ville de Montréal - Arrondissement Lasalle",
+      "owner": "Ville de Montréal (Arrondissement de LaSalle)",
       "category": "Aménagement ou réaménagement des places publiques",
       "closing_date": "2026-03-24",
       "estimated_budget": null
@@ -21,7 +21,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Ville de Montréal - Arrondissement Rivière-des-Prairies- Pointe-aux-Trembles",
+      "owner": "Commission scolaire de la Pointe-aux-Trembles",
       "category": "Terrain de sport",
       "closing_date": "2026-04-01",
       "estimated_budget": null
@@ -45,7 +45,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Ville de Gatineau.",
+      "owner": "Eugène Beaudoin",
       "category": "Besoins en personnel temporaire - architecture",
       "closing_date": "2026-04-09",
       "estimated_budget": null
@@ -69,7 +69,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Ville de Québec",
+      "owner": "Patro de Charlesbourg",
       "category": "Construction de terrains de jeux et installation de matériel",
       "closing_date": "2026-03-30",
       "estimated_budget": null
@@ -105,7 +105,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Ville de Montréal - Arrondissement Le Plateau-Mont-Royal",
+      "owner": "Ville de Montréal",
       "category": "Pavage, asphaltage et construction d’infrastructures",
       "closing_date": "2026-04-07",
       "estimated_budget": null
@@ -129,7 +129,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Ville de Montréal - Service de l'approvisionnement",
+      "owner": "Station Jean-R.-Marcotte",
       "category": "Services d’ingénierie",
       "closing_date": "2026-04-02",
       "estimated_budget": null
@@ -177,7 +177,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Centre intégré de santé et de services sociaux de l'Abitibi-Témiscamingue",
+      "owner": "CMSSS de La Sarre",
       "category": "Construction et maintenance de bâtiments ou d’installations",
       "closing_date": "2026-03-20",
       "estimated_budget": null
@@ -189,7 +189,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Ville de Montréal - Service de l'approvisionnement",
+      "owner": "Parc-nature du Bois-de-Liesse",
       "category": "Architecture paysagère",
       "closing_date": "2026-03-26",
       "estimated_budget": null
@@ -213,7 +213,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Ville de Gatineau.",
+      "owner": "Parc J.-H.-Maloney",
       "category": "Services d’ingénierie",
       "closing_date": "2026-04-02",
       "estimated_budget": null
@@ -249,7 +249,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Commission scolaire Western Québec / Western Quebec School Board",
+      "owner": "Centre de formation continue - Campbell's Bay",
       "category": "Services de construction, de réparation et d’entretien d’immeubles",
       "closing_date": "2026-03-27",
       "estimated_budget": null
@@ -285,7 +285,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Loto-Québec .",
+      "owner": "Complexe Hôtel-Casino du Lac-Leamy",
       "category": "Remodelage d’hôtels ou de motels",
       "closing_date": "2026-04-09",
       "estimated_budget": null
@@ -309,7 +309,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Centre de services scolaire de la Vallée-des-Tisserands",
+      "owner": "Commission scolaire ou école St-Eugène Beauharnois",
       "category": "Besoins en personnel temporaire - architecture",
       "closing_date": "2026-04-07",
       "estimated_budget": null
@@ -321,7 +321,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Centre de services scolaire de la Vallée-des-Tisserands",
+      "owner": "Commission scolaire ou école St-Eugène Beauharnois",
       "category": "Services d’ingénierie",
       "closing_date": "2026-04-07",
       "estimated_budget": null
@@ -333,7 +333,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Ville de Montréal - Arrondissement d'Outremont",
+      "owner": "Arrondissement d'Outremont",
       "category": "Aménagement ou réaménagement de parcs et de jardins",
       "closing_date": "2026-04-02",
       "estimated_budget": null
@@ -369,7 +369,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Ville de Drummondville.",
+      "owner": "Municipalité (parc Mgr Adolph-Demers)",
       "category": "Aménagement ou réaménagement de parcs et de jardins",
       "closing_date": "2026-03-26",
       "estimated_budget": null
@@ -381,7 +381,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "SQI-Direction immobilière Saguenay-Lac-Saint-Jean, Côte-Nord",
+      "owner": "Non spécifié",
       "category": "Services de construction, de réparation et d’entretien d’immeubles",
       "closing_date": "2026-04-02",
       "estimated_budget": null
@@ -393,7 +393,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Ville de Sainte-Julie",
+      "owner": "Municipalité (non spécifiée)",
       "category": "Services d’ingénierie",
       "closing_date": "2026-03-24",
       "estimated_budget": null
@@ -405,7 +405,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "MRC de La Côte-de-Gaspé.",
+      "owner": "MRC",
       "category": "Rénovation et réparation d’immeubles commerciaux et de bureaux",
       "closing_date": "2026-03-30",
       "estimated_budget": null
@@ -417,7 +417,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Ville de Montréal - Arrondissement d'Anjou",
+      "owner": "Municipalité d'Anjou",
       "category": "Aménagement ou réaménagement des places publiques",
       "closing_date": "2026-03-25",
       "estimated_budget": null
@@ -465,7 +465,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Société québécoise des infrastructures",
+      "owner": "Gouvernement du Québec",
       "category": "Entretien de pelouses",
       "closing_date": "2026-03-23",
       "estimated_budget": null
@@ -477,7 +477,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Hydro-Québec.",
+      "owner": "Centre-du-Québec",
       "category": "Construction lourde",
       "closing_date": "2026-03-18",
       "estimated_budget": null
@@ -513,7 +513,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Hydro-Québec.",
+      "owner": "Centrale des Cèdres",
       "category": "Route secondaire",
       "closing_date": "2026-03-26",
       "estimated_budget": null
@@ -525,7 +525,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Santé Québec - Établissement CIUSSS de l’Est-de-l’Île-de-Montréal",
+      "owner": "Hôpital Maisonneuve-Rosemont",
       "category": "Construction et maintenance de bâtiments ou d’installations",
       "closing_date": "2026-03-20",
       "estimated_budget": null
@@ -537,7 +537,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Corporation d'urgences-santé",
+      "owner": "Urgences-Santé",
       "category": "Construction et maintenance de bâtiments ou d’installations",
       "closing_date": "2026-04-01",
       "estimated_budget": null
@@ -549,7 +549,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Ville de Sherbrooke",
+      "owner": "Centre culturel et du patrimoine Uplands",
       "category": "Services de maintenance et de réparation des bâtiments",
       "closing_date": "2026-03-26",
       "estimated_budget": null
@@ -573,7 +573,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Ville de Montréal - Arrondissement de Villeray—Saint-Michel—Parc-Extension",
+      "owner": "Patro Villeray",
       "category": "Construction et maintenance de bâtiments ou d’installations",
       "closing_date": "2026-03-18",
       "estimated_budget": null
@@ -597,21 +597,9 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Centre de services scolaire de l'Estuaire",
+      "owner": "Commission scolaire Chute-aux-Outardes",
       "category": "Construction et maintenance de bâtiments ou d’installations",
       "closing_date": "2026-03-26",
-      "estimated_budget": null
-    },
-    {
-      "fingerprint": "871d49a33c096c2c",
-      "title": "Travaux de réaménagement des salles polyvalentes et des installations sanitaires au rez-de-chaussée du 1200, boulevard Chomedey",
-      "url": "https://www.seao.ca/OpportunityPublication/AO/Details/20121028",
-      "summary": "",
-      "source": "SEAO",
-      "province": "QC",
-      "owner": "Ville de Laval",
-      "category": "Construction et maintenance de bâtiments ou d’installations",
-      "closing_date": "2026-03-17",
       "estimated_budget": null
     },
     {
@@ -621,7 +609,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Centre intégré universitaire de santé et de services sociaux de la Mauricie-et-du-Centre-du-Québec (CIUSSS MCQ)",
+      "owner": "HSC",
       "category": "Services de construction, de réparation et d’entretien d’immeubles",
       "closing_date": "2026-03-16",
       "estimated_budget": null
@@ -645,7 +633,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Hydro-Québec.",
+      "owner": "Ville de Saint-Félicien",
       "category": "Construction de bâtiments non résidentiels",
       "closing_date": "2026-03-18",
       "estimated_budget": null
@@ -681,7 +669,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Cégep de Sept-Îles",
+      "owner": "Arts Visuels",
       "category": "Construction et maintenance de bâtiments ou d’installations",
       "closing_date": "2026-03-17",
       "estimated_budget": null
@@ -693,7 +681,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Société québécoise des infrastructures",
+      "owner": "Édifice Wilfrid-Derome",
       "category": "Ingénierie des bâtiments",
       "closing_date": "2026-03-23",
       "estimated_budget": null
@@ -717,7 +705,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Ville de Plessisville.",
+      "owner": "Municipalité (parcs Domaine Somerset et Bourassa)",
       "category": "Ingénierie et aménagement urbain",
       "closing_date": "2026-03-18",
       "estimated_budget": null
@@ -729,7 +717,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Ville de Drummondville.",
+      "owner": "Service des loisirs",
       "category": "Services d’ingénierie",
       "closing_date": "2026-03-16",
       "estimated_budget": null
@@ -741,7 +729,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Société québécoise des infrastructures",
+      "owner": "Ville de Montréal ou organisation propriétaire du 600 rue Fullum",
       "category": "Services de construction, de réparation et d’entretien d’immeubles",
       "closing_date": "2026-03-18",
       "estimated_budget": null
@@ -752,8 +740,8 @@
       "url": "https://www.seao.ca/OpportunityPublication/AO/Details/20123209",
       "summary": "",
       "source": "SEAO",
-      "province": "QC",
-      "owner": "Ville de Mont-Royal.",
+      "province": "ON",
+      "owner": "Municipalité de Cornwall",
       "category": "Rue, avenue, route ou boulevard",
       "closing_date": "2026-03-16",
       "estimated_budget": null
@@ -801,7 +789,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Centre de services scolaires de la Capitale",
+      "owner": "École Primaire Jules-Emond",
       "category": "Construction et maintenance de bâtiments ou d’installations",
       "closing_date": "2026-03-17",
       "estimated_budget": null
@@ -825,7 +813,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Ville de Montréal - Service de l'approvisionnement",
+      "owner": "Biosphère",
       "category": "Service technique pour les expositions et les collections des galeries d'art et des musées",
       "closing_date": "2026-04-02",
       "estimated_budget": null
@@ -837,7 +825,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Université du Québec à Montréal",
+      "owner": "École des médias",
       "category": "Construction et maintenance de bâtiments ou d’installations",
       "closing_date": "2026-03-18",
       "estimated_budget": null
@@ -849,7 +837,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Ville de Saint-Hyacinthe .",
+      "owner": "Municipalité (Les Encans)",
       "category": "Génie des eaux usées",
       "closing_date": "2026-03-23",
       "estimated_budget": null
@@ -861,7 +849,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Ville de Saint-Hyacinthe .",
+      "owner": "Centre aquatique Desjardins",
       "category": "Services d’ingénierie",
       "closing_date": "2026-03-23",
       "estimated_budget": null
@@ -873,7 +861,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Société québécoise des infrastructures",
+      "owner": "Édifice Wilfrid-Derome",
       "category": "Services d’ingénierie",
       "closing_date": "2026-03-26",
       "estimated_budget": null
@@ -885,7 +873,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Société québécoise des infrastructures",
+      "owner": "Édifice Wilfrid-Derome",
       "category": "Services d’ingénierie",
       "closing_date": "2026-03-26",
       "estimated_budget": null
@@ -897,7 +885,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Ministère des Transports et de la Mobilité durable (Direction générale de la gestion contractuelle)",
+      "owner": "Ministère des Transports du Québec",
       "category": "Construction et réparation de ponts",
       "closing_date": "2026-03-18",
       "estimated_budget": null
@@ -933,7 +921,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Ville de Sorel-Tracy (approvisionnement)",
+      "owner": "Centrale de traitement de l'eau",
       "category": "Services d’ingénierie",
       "closing_date": "2026-04-01",
       "estimated_budget": null
@@ -945,7 +933,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Ville de Laval",
+      "owner": "Parc Le Boutillier",
       "category": "Services de construction, de réparation et d’entretien d’immeubles",
       "closing_date": "2026-04-09",
       "estimated_budget": null
@@ -993,7 +981,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Régie des matières résiduelles du Lac-Saint-Jean",
+      "owner": "Municipalité d'Hébertville-Station",
       "category": "Terrains, bâtiments, constructions et voies de communication",
       "closing_date": "2026-03-23",
       "estimated_budget": null
@@ -1005,7 +993,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Ville de Montréal - Arrondissement d'Anjou",
+      "owner": "Ville d'Anjou",
       "category": "Aménagement ou réaménagement de parcs et de jardins",
       "closing_date": "2026-03-18",
       "estimated_budget": null
@@ -1017,7 +1005,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Centre de services scolaire des Hautes-Laurentides",
+      "owner": "Centre Christ-Roi",
       "category": "Construction et maintenance de bâtiments ou d’installations",
       "closing_date": "2026-03-19",
       "estimated_budget": null
@@ -1029,7 +1017,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Ministère des Ressources naturelles et des Forêts",
+      "owner": "Pépinière et Centre de semences forestières de Berthier",
       "category": "Services d’ingénierie",
       "closing_date": "2026-03-23",
       "estimated_budget": null
@@ -1053,7 +1041,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Centre de services scolaires de la Capitale",
+      "owner": "École du Val-Joli",
       "category": "Construction et maintenance de bâtiments ou d’installations",
       "closing_date": "2026-03-20",
       "estimated_budget": null
@@ -1077,7 +1065,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Ville de Salaberry-de-Valleyfield",
+      "owner": "Municipalité (parc Marcil)",
       "category": "Aménagement ou réaménagement de parcs et de jardins",
       "closing_date": "2026-04-16",
       "estimated_budget": null
@@ -1101,7 +1089,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Centre de services scolaire de la région de Sherbrooke.",
+      "owner": "École Larocque",
       "category": "Construction et maintenance de bâtiments ou d’installations",
       "closing_date": "2026-03-26",
       "estimated_budget": null
@@ -1113,7 +1101,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Santé Québec - Établissement CIUSSS de l’Est-de-l’Île-de-Montréal",
+      "owner": "HMR (Hôpital Maisonneuve-Rosemont)",
       "category": "Construction et maintenance de bâtiments ou d’installations",
       "closing_date": "2026-04-09",
       "estimated_budget": null
@@ -1125,7 +1113,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Société québécoise des infrastructures",
+      "owner": "Commission scolaire de Châteauguay ou organisme responsable",
       "category": "Services de construction, de réparation et d’entretien d’immeubles",
       "closing_date": "2026-03-30",
       "estimated_budget": null
