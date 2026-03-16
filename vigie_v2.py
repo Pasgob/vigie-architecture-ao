@@ -201,6 +201,7 @@ def fetch_seao(since: datetime) -> list[dict]:
                     "summary":     description[:400],
                     "source":      "SEAO",
                     "province":    "QC",
+                    "pub_date": release.get("date", "")[:10] or datetime.now().strftime("%Y-%m-%d"),
                     "owner":       owner,
                     "category":    category,
                     "closing_date": closing_date.strftime("%Y-%m-%d"),
@@ -222,7 +223,7 @@ def fetch_seao(since: datetime) -> list[dict]:
 def fetch_canadabuys(since: datetime) -> list[dict]:
     """CanadaBuys — open data CSV fédéral, mis à jour toutes les 2h."""
     import csv, io
-    url = "https://canadabuys.canada.ca/opendata/pub/tenders/tenderNotice_avisAppelOffres.csv"
+url = "https://donnees-data.tpsgc-pwgsc.gc.ca/ba2/aev-bas/appeloffresouvertsactifs-tendernoticesopen.csv"
     projects = []
     PROVINCES_CIBLES = {"NB", "NS", "PE", "ON", "NL", "QC"}
     try:
@@ -353,6 +354,7 @@ TITRE : {item['title']}
 RÉSUMÉ : {item.get('summary','')[:800]}
 SOURCE : {item['source']}
 PROVINCE : {item.get('province','?')}
+NOTE : Pour SEAO, le résumé est souvent vide. Déduis prix/entrevue/visite/format du titre et du contexte québécois (généralement Prix=Oui, Format lettre).
 
 Extrais en JSON strict (null si inconnu) :
 {{
@@ -373,7 +375,7 @@ Extrais en JSON strict (null si inconnu) :
     try:
         resp = client.messages.create(
             model=CONFIG["claude_model"],
-            max_tokens=400,
+            max_tokens=600,
             messages=[{"role": "user", "content": prompt}],
         )
         text = resp.content[0].text.strip()
