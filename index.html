@@ -61,7 +61,7 @@
     </select>
     <select id="f-source" onchange="render()">
       <option value="">Toute source</option>
-      <option>SEAO</option><option>BuySell-CA</option>
+      <option>SEAO</option><option>CanadaBuys</option><option>BuySell-CA</option>
     </select>
     <select id="f-province" onchange="render()">
       <option value="">Toute province</option>
@@ -78,7 +78,7 @@
 
 <script>
 let ALL = [];
-const SRC_COLORS = {SEAO:'#1e40af','BuySell-CA':'#7c3aed'};
+const SRC_COLORS = {SEAO:'#1e40af','CanadaBuys':'#0f766e','BuySell-CA':'#7c3aed'};
 
 function daysLeft(d){
   if(!d) return null;
@@ -130,8 +130,7 @@ function render(){
     if(fp && p.province!==fp) return false;
     if(q && !`${p.title} ${p.owner} ${p.province}`.toLowerCase().includes(q)) return false;
     return true;
-.sort((a,b)=>(b.added_at||b.pub_date||'').localeCompare(a.added_at||a.pub_date||''));
-
+  }).sort((a,b)=>(b.added_at||b.pub_date||'').localeCompare(a.added_at||a.pub_date||''));
 
   const el = document.getElementById('list');
   if(!list.length){
@@ -184,7 +183,11 @@ function openModalData(p){
     </div>
     <h2 style="font-size:16px;font-weight:700;color:#f1f5f9;margin:0 0 16px">${p.title||'Sans titre'}</h2>
     ${[['Client',p.owner],['Province',p.province],['Budget',fmtBudget(p.estimated_budget)],
-       ['Clôture',fmtDate(p.closing_date)],['Source',p.source],['Catégorie',p.category]]
+       ['Clôture',fmtDate(p.closing_date)],['Source',p.source],
+       ['Cote',p.cote_strategique],['Prix',p.prix],['Entrevue',p.entrevue],
+       ['Visite',p.visite_obligatoire],['Format',p.format_ao],
+       ['Catégorie AO',p.categorie_ao]]
+
       .filter(([,v])=>v&&v!=='N/D'&&v!=='null')
       .map(([k,v])=>`<div class="modal-row"><div class="modal-key">${k}</div><div>${v}</div></div>`).join('')}
     ${p.summary?`<div style="background:#0f1117;border:1px solid #1e293b;border-radius:8px;padding:12px;font-size:12px;color:#94a3b8;line-height:1.6;margin-top:12px">${p.summary}</div>`:''}
