@@ -421,8 +421,8 @@ def build_html(projects: list) -> str:
         color, bg = STYLES[level]
         rows = ""
         for p in sorted(group, key=lambda x: x.get("added_at") or x.get("pub_date") or "", reverse=True):
-
-            budget = f"${p['estimated_budget']:,.0f}" if p.get("estimated_budget") else "N/            closing = p.get("closing_date") or "N/D"
+            budget = f"${p['estimated_budget']:,.0f}" if p.get("estimated_budget") else "N/D"
+            closing = p.get("closing_date") or "N/D"
             cote = p.get("cote_strategique") or "?"
             cote_color = {"A":"#16a34a","B":"#ea580c","C":"#6b7280"}.get(cote,"#6b7280")
             rows += f"""<tr>
@@ -446,18 +446,6 @@ def build_html(projects: list) -> str:
               <td style="padding:8px;border:1px solid #e5e7eb">{p['source']}</td>
             </tr>"""
 
-              <td style="padding:8px;border:1px solid #e5e7eb">
-                <a href="{p['url']}" style="color:#1d4ed8;font-weight:600">{p['title']}</a>
-                <br><small style="color:#6b7280">{(p.get('summary') or '')[:120]}</small>
-              </td>
-              <td style="padding:8px;border:1px solid #e5e7eb">{p.get('owner','N/D')}</td>
-              <td style="padding:8px;border:1px solid #e5e7eb;text-align:center"><b>{p.get('province','?')}</b></td>
-              <td style="padding:8px;border:1px solid #e5e7eb;text-align:right">{budget}</td>
-              <td style="padding:8px;border:1px solid #e5e7eb;text-align:center">
-                {closing}<br><small>({days_left(closing)} j)</small>
-              </td>
-              <td style="padding:8px;border:1px solid #e5e7eb">{p['source']}</td>
-            </tr>"""
         sections += f"""
         <h3 style="color:{color};border-left:4px solid {color};padding-left:10px;margin-top:24px">
           {level} — {len(group)} AO
