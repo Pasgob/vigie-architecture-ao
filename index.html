@@ -154,6 +154,7 @@ function render(){
           <div class="card-meta">
             <span>🏢 ${p.owner||'N/D'}</span>
             ${p.estimated_budget?`<span>💰 ${fmtBudget(p.estimated_budget)}</span>`:''}
+            ${p.ref_id?`<span style="color:#334155">#${p.ref_id}</span>`:''}
           </div>
         </div>
         <div class="card-right">
