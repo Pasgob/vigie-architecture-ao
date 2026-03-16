@@ -223,7 +223,7 @@ def fetch_seao(since: datetime) -> list[dict]:
 def fetch_canadabuys(since: datetime) -> list[dict]:
     """CanadaBuys — open data CSV fédéral, mis à jour toutes les 2h."""
     import csv, io
-    url = "https://donnees-data.tpsgc-pwgsc.gc.ca/ba2/aev-bas/appeloffresouvertsactifs-tendernoticesopen.csv"
+    url = "https://canadabuys.canada.ca/opendata/pub/newTenderNotice-nouvelAvisAppelOffres.csv"
     projects = []
     PROVINCES_CIBLES = {"NB", "NS", "PE", "ON", "NL", "QC"}
     try:
