@@ -183,7 +183,7 @@ function openModalData(p){
     </div>
     <h2 style="font-size:16px;font-weight:700;color:#f1f5f9;margin:0 0 16px">${p.title||'Sans titre'}</h2>
     ${[['Client',p.owner],['Province',p.province],['Budget',fmtBudget(p.estimated_budget)],
-       ['Clôture',fmtDate(p.closing_date)],['Source',p.source],
+       ['Clôture',fmtDate(p.closing_date)],['Référence',p.ref_id],['Source',p.source],
        ['Cote',p.cote_strategique],['Prix',p.prix],['Entrevue',p.entrevue],
        ['Visite',p.visite_obligatoire],['Format',p.format_ao],
        ['Catégorie AO',p.categorie_ao]]
