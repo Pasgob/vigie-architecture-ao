@@ -420,10 +420,32 @@ def build_html(projects: list) -> str:
         if not group: continue
         color, bg = STYLES[level]
         rows = ""
-        for p in sorted(group, key=lambda x: x.get("closing_date") or "9999"):
-            budget = f"${p['estimated_budget']:,.0f}" if p.get("estimated_budget") else "N/D"
-            closing = p.get("closing_date") or "N/D"
+        for p in sorted(group, key=lambda x: x.get("added_at") or x.get("pub_date") or "", reverse=True):
+
+            budget = f"${p['estimated_budget']:,.0f}" if p.get("estimated_budget") else "N/            closing = p.get("closing_date") or "N/D"
+            cote = p.get("cote_strategique") or "?"
+            cote_color = {"A":"#16a34a","B":"#ea580c","C":"#6b7280"}.get(cote,"#6b7280")
             rows += f"""<tr>
+              <td style="padding:8px;border:1px solid #e5e7eb">
+                <a href="{p['url']}" style="color:#1d4ed8;font-weight:600">{p['title']}</a>
+                <br><small style="color:#6b7280">{(p.get('resume_comite') or p.get('summary') or '')[:150]}</small>
+              </td>
+              <td style="padding:8px;border:1px solid #e5e7eb">{p.get('owner','N/D')}</td>
+              <td style="padding:8px;border:1px solid #e5e7eb;text-align:center"><b>{p.get('province','?')}</b></td>
+              <td style="padding:8px;border:1px solid #e5e7eb;text-align:right">{budget}</td>
+              <td style="padding:8px;border:1px solid #e5e7eb;text-align:center">
+                {closing}<br><small>({days_left(closing)} j)</small>
+              </td>
+              <td style="padding:8px;border:1px solid #e5e7eb;text-align:center">
+                <b style="color:{cote_color}">{cote}</b>
+              </td>
+              <td style="padding:8px;border:1px solid #e5e7eb;text-align:center">{p.get('prix') or '?'}</td>
+              <td style="padding:8px;border:1px solid #e5e7eb;text-align:center">{p.get('entrevue') or '?'}</td>
+              <td style="padding:8px;border:1px solid #e5e7eb;text-align:center">{p.get('visite_obligatoire') or '?'}</td>
+              <td style="padding:8px;border:1px solid #e5e7eb">{p.get('format_ao') or '?'}</td>
+              <td style="padding:8px;border:1px solid #e5e7eb">{p['source']}</td>
+            </tr>"""
+
               <td style="padding:8px;border:1px solid #e5e7eb">
                 <a href="{p['url']}" style="color:#1d4ed8;font-weight:600">{p['title']}</a>
                 <br><small style="color:#6b7280">{(p.get('summary') or '')[:120]}</small>
@@ -448,7 +470,13 @@ def build_html(projects: list) -> str:
               <th style="padding:8px;border:1px solid #e5e7eb">Prov.</th>
               <th style="padding:8px;border:1px solid #e5e7eb">Budget</th>
               <th style="padding:8px;border:1px solid #e5e7eb">Clôture</th>
+              <th style="padding:8px;border:1px solid #e5e7eb">Cote</th>
+              <th style="padding:8px;border:1px solid #e5e7eb">Prix?</th>
+              <th style="padding:8px;border:1px solid #e5e7eb">Entrevue?</th>
+              <th style="padding:8px;border:1px solid #e5e7eb">Visite?</th>
+              <th style="padding:8px;border:1px solid #e5e7eb">Format</th>
               <th style="padding:8px;border:1px solid #e5e7eb">Source</th>
+
             </tr>
           </thead>
           <tbody>{rows}</tbody>
