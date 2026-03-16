@@ -130,7 +130,8 @@ function render(){
     if(fp && p.province!==fp) return false;
     if(q && !`${p.title} ${p.owner} ${p.province}`.toLowerCase().includes(q)) return false;
     return true;
-  }).sort((a,b)=>(b.added_at||b.pub_date||'0').localeCompare(a.added_at||a.pub_date||'0'));
+.sort((a,b)=>(b.added_at||b.pub_date||'').localeCompare(a.added_at||a.pub_date||''));
+
 
   const el = document.getElementById('list');
   if(!list.length){
