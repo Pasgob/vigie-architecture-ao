@@ -5,80 +5,107 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Vigie Architecture — ABCP</title>
 <style>
+  *{box-sizing:border-box}
   body{font-family:Arial,sans-serif;background:#0f1117;color:#e2e8f0;margin:0;padding:0}
-  header{background:#1a1f2e;padding:16px 24px;border-bottom:1px solid #1e293b;position:sticky;top:0;z-index:10}
+  header{background:linear-gradient(135deg,#1a1f2e,#0f1117);padding:16px 24px;border-bottom:1px solid #1e293b;position:sticky;top:0;z-index:10}
   h1{margin:0;font-size:18px;color:#f1f5f9}
-  .sub{font-size:11px;color:#64748b;letter-spacing:.08em}
-  .stats{display:flex;gap:24px;margin-top:8px}
+  .sub{font-size:11px;color:#64748b;letter-spacing:.08em;margin-top:2px}
+  .stats{display:flex;gap:24px;margin-top:10px}
   .stat{text-align:center}
   .stat-val{font-size:22px;font-weight:800}
   .stat-lbl{font-size:9px;letter-spacing:.12em;color:#475569}
-  .container{padding:20px 24px}
-  .filters{display:flex;gap:12px;margin-bottom:16px;flex-wrap:wrap}
+  .container{padding:20px 24px;max-width:900px;margin:auto}
+  .filters{display:flex;gap:10px;margin-bottom:16px;flex-wrap:wrap;align-items:center}
   input,select{background:#161b27;border:1px solid #1e293b;border-radius:6px;color:#e2e8f0;padding:8px 10px;font-size:12px;font-family:Arial}
-  .card{background:#161b27;border:1px solid #1e293b;border-radius:10px;padding:14px 16px;margin-bottom:8px;cursor:pointer;transition:border-color .15s}
-  .card:hover{border-color:#334155}
-  .card-header{display:flex;align-items:center;gap:8px;margin-bottom:6px;flex-wrap:wrap}
-  .badge{font-size:9px;font-weight:700;padding:2px 7px;border-radius:4px;letter-spacing:.08em}
-  .URGENT{background:#fef2f2;color:#b91c1c}
-  .PRIORITAIRE{background:#fff7ed;color:#c2410c}
-  .NORMAL{background:#f0fdf4;color:#15803d}
-  .src{font-size:9px;color:#fff;padding:2px 7px;border-radius:4px;font-weight:600}
-  .card-title{font-size:14px;font-weight:600;color:#f1f5f9;margin-bottom:4px}
-  .card-meta{font-size:11px;color:#64748b;display:flex;gap:16px;flex-wrap:wrap}
+  input:focus,select:focus{outline:1px solid #1d4ed8}
+
+  /* Cartes */
+  .card{background:#161b27;border:1px solid #1e293b;border-radius:10px;padding:14px 16px;margin-bottom:8px;cursor:pointer;transition:all .15s;display:grid;grid-template-columns:1fr auto;gap:8px 16px;align-items:start}
+  .card:hover{border-color:#334155;background:#1a1f2e}
+  .card.URGENT  {border-left:3px solid #dc2626}
+  .card.PRIORITAIRE{border-left:3px solid #f97316}
+  .card.NORMAL  {border-left:3px solid #22c55e}
+
+  .card-meta-top{font-size:10px;color:#475569;margin-bottom:4px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+  .card-title{font-size:14px;font-weight:600;color:#f1f5f9;margin-bottom:3px;line-height:1.4}
+  .card-owner{font-size:11px;color:#64748b;margin-bottom:6px}
+  .card-resume{font-size:11px;color:#475569;font-style:italic;margin-bottom:6px;line-height:1.5}
+  .card-badges{display:flex;gap:4px;flex-wrap:wrap}
+
+  .badge-urg{font-size:9px;font-weight:700;padding:2px 7px;border-radius:4px;letter-spacing:.06em}
+  .URGENT-badge{background:#fef2f2;color:#b91c1c}
+  .PRIORITAIRE-badge{background:#fff7ed;color:#c2410c}
+  .NORMAL-badge{background:#f0fdf4;color:#15803d}
+  .src-badge{font-size:9px;color:#fff;padding:2px 7px;border-radius:4px;font-weight:600}
+  .info-badge{font-size:9px;padding:2px 7px;border-radius:3px}
+
   .card-right{text-align:right;white-space:nowrap}
-  .days{font-size:13px;font-weight:700}
+  .days-val{font-size:20px;font-weight:800;line-height:1}
+  .days-lbl{font-size:9px;color:#475569;margin-bottom:4px}
+  .cote-badge{font-size:11px;font-weight:700;padding:3px 8px;border-radius:4px;display:inline-block;margin-top:4px}
+
   .updated{font-size:10px;color:#334155;text-align:right;margin-bottom:12px}
-  .modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:100;align-items:center;justify-content:center;padding:24px}
-  .modal.open{display:flex}
-  .modal-box{background:#161b27;border:1px solid #1e293b;border-radius:16px;padding:28px;max-width:560px;width:100%;max-height:90vh;overflow-y:auto}
-  .modal-row{display:flex;gap:12px;margin-bottom:8px;font-size:13px}
-  .modal-key{color:#475569;width:90px;flex-shrink:0}
-  .btn{display:inline-block;background:#1d4ed8;color:#fff;padding:10px 20px;border-radius:8px;text-decoration:none;font-size:12px;font-weight:700;border:none;cursor:pointer}
   .empty{text-align:center;color:#475569;padding:60px 0;font-size:13px}
-  .card-layout{display:grid;grid-template-columns:1fr auto;gap:4px 16px;align-items:start}
+
+  /* Modal */
+  .modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.8);z-index:100;align-items:center;justify-content:center;padding:20px}
+  .modal.open{display:flex}
+  .modal-box{background:#161b27;border:1px solid #1e293b;border-radius:14px;padding:24px;max-width:560px;width:100%;max-height:90vh;overflow-y:auto;box-shadow:0 25px 60px rgba(0,0,0,.6)}
+  .modal-row{display:flex;gap:12px;margin-bottom:8px;font-size:13px}
+  .modal-key{color:#475569;width:100px;flex-shrink:0;font-size:11px;padding-top:1px}
+  .modal-val{color:#e2e8f0}
+  .btn{display:inline-block;background:#1d4ed8;color:#fff;padding:10px 20px;border-radius:8px;text-decoration:none;font-size:12px;font-weight:700;border:none;cursor:pointer;letter-spacing:.04em}
+  .btn:hover{background:#1e40af}
 </style>
 </head>
 <body>
 
 <header>
   <h1>🏛 Vigie Architecture <span style="font-weight:300;color:#475569">— ABCP</span></h1>
-  <div class="sub">APPELS D'OFFRES EN TEMPS RÉEL · SEAO · BUYSELL-CA</div>
+  <div class="sub">APPELS D'OFFRES EN TEMPS RÉEL · SEAO · CANADABUYS</div>
   <div class="stats">
     <div class="stat"><div class="stat-val" id="s-total" style="color:#94a3b8">—</div><div class="stat-lbl">TOTAL</div></div>
     <div class="stat"><div class="stat-val" id="s-urgent" style="color:#ef4444">—</div><div class="stat-lbl">URGENT</div></div>
     <div class="stat"><div class="stat-val" id="s-qc" style="color:#1d4ed8">—</div><div class="stat-lbl">QUÉBEC</div></div>
+    <div class="stat"><div class="stat-val" id="s-other" style="color:#0f766e">—</div><div class="stat-lbl">HORS-QC</div></div>
   </div>
 </header>
 
 <div class="container">
   <div class="updated" id="updated">Chargement…</div>
   <div class="filters">
-    <input id="search" placeholder="Rechercher…" oninput="render()" style="width:200px">
+    <input id="search" placeholder="🔍 Rechercher…" oninput="render()" style="width:220px">
     <select id="f-urgency" onchange="render()">
       <option value="">Toute urgence</option>
       <option>URGENT</option><option>PRIORITAIRE</option><option>NORMAL</option>
     </select>
     <select id="f-source" onchange="render()">
       <option value="">Toute source</option>
-      <option>SEAO</option><option>CanadaBuys</option><option>BuySell-CA</option>
+      <option>SEAO</option><option>CanadaBuys</option>
     </select>
     <select id="f-province" onchange="render()">
       <option value="">Toute province</option>
-      <option>QC</option><option>NB</option><option>NS</option><option>ON</option>
+      <option>QC</option><option>NB</option><option>NS</option><option>ON</option><option>PE</option><option>NL</option>
     </select>
+    <select id="f-cote" onchange="render()">
+      <option value="">Toute cote</option>
+      <option>A</option><option>B</option><option>C</option>
+    </select>
+    <span id="count" style="font-size:11px;color:#475569;margin-left:4px"></span>
   </div>
   <div id="list"></div>
 </div>
 
-<!-- Modal -->
 <div class="modal" id="modal" onclick="closeModal(event)">
   <div class="modal-box" id="modal-box"></div>
 </div>
 
 <script>
 let ALL = [];
-const SRC_COLORS = {SEAO:'#1e40af','CanadaBuys':'#0f766e','BuySell-CA':'#7c3aed'};
+const SRC_COLORS = {SEAO:'#1e40af', CanadaBuys:'#0f766e'};
+const COTE_COLORS = {A:'#16a34a', B:'#ea580c', C:'#64748b'};
+const COTE_BG    = {A:'#f0fdf4', B:'#fff7ed', C:'#f1f5f9'};
+const URG_COLORS = {URGENT:'#dc2626', PRIORITAIRE:'#f97316', NORMAL:'#22c55e'};
 
 function daysLeft(d){
   if(!d) return null;
@@ -87,50 +114,59 @@ function daysLeft(d){
 function urgency(d){
   const n=daysLeft(d);
   if(n===null) return 'NORMAL';
-  if(n<=7) return 'URGENT';
+  if(n<=7)  return 'URGENT';
   if(n<=14) return 'PRIORITAIRE';
   return 'NORMAL';
 }
 function fmtDate(d){
   if(!d) return 'N/D';
-  return new Date(d).toLocaleDateString('fr-CA',{day:'2-digit',month:'short',year:'numeric'});
+  try{
+    const dt = new Date(d+'T12:00:00');
+    return dt.toLocaleDateString('fr-CA',{day:'2-digit',month:'short',year:'numeric'});
+  }catch{return d;}
 }
 function fmtBudget(b){
-  if(!b) return 'N/D';
-  return '$'+(b/1e6).toFixed(1)+' M';
+  if(!b) return null;
+  if(b>=1000000) return '$'+(b/1e6).toFixed(1)+' M';
+  return '$'+b.toLocaleString('fr-CA');
 }
 
 async function load(){
   try{
     const r = await fetch('data.json?t='+Date.now());
     const data = await r.json();
-    ALL = data.projects || [];
+    ALL = (data.projects||[]).sort((a,b)=>(b.pub_date||'').localeCompare(a.pub_date||''));
     document.getElementById('updated').textContent =
       'Dernière mise à jour : '+new Date(data.updated_at).toLocaleString('fr-CA');
-    document.getElementById('s-total').textContent = ALL.length;
+    document.getElementById('s-total').textContent  = ALL.length;
     document.getElementById('s-urgent').textContent = ALL.filter(p=>urgency(p.closing_date)==='URGENT').length;
-    document.getElementById('s-qc').textContent = ALL.filter(p=>p.province==='QC').length;
+    document.getElementById('s-qc').textContent     = ALL.filter(p=>p.province==='QC').length;
+    document.getElementById('s-other').textContent  = ALL.filter(p=>p.province&&p.province!=='QC').length;
     render();
-  } catch(e){
-    document.getElementById('list').innerHTML =
-      '<div class="empty">⚠️ Données non disponibles.<br>Le premier cycle GitHub Actions doit s\'être complété.</div>';
-    document.getElementById('updated').textContent = '';
+  }catch(e){
+    document.getElementById('list').innerHTML=
+      '<div class="empty">⚠️ Données non disponibles — le premier cycle doit être complété.</div>';
+    document.getElementById('updated').textContent='';
   }
 }
 
 function render(){
-  const q = document.getElementById('search').value.toLowerCase();
+  const q  = document.getElementById('search').value.toLowerCase();
   const fu = document.getElementById('f-urgency').value;
   const fs = document.getElementById('f-source').value;
   const fp = document.getElementById('f-province').value;
+  const fc = document.getElementById('f-cote').value;
 
-  let list = ALL.filter(p=>{
+  const list = ALL.filter(p=>{
     if(fu && urgency(p.closing_date)!==fu) return false;
     if(fs && p.source!==fs) return false;
     if(fp && p.province!==fp) return false;
-    if(q && !`${p.title} ${p.owner} ${p.province}`.toLowerCase().includes(q)) return false;
+    if(fc && p.cote_strategique!==fc) return false;
+    if(q && !`${p.title||''} ${p.owner||''} ${p.province||''} ${p.ref_id||''}`.toLowerCase().includes(q)) return false;
     return true;
-  }).sort((a,b)=>(b.added_at||b.pub_date||'').localeCompare(a.added_at||a.pub_date||''));
+  });
+
+  document.getElementById('count').textContent = list.length+' résultat'+(list.length!==1?'s':'');
 
   const el = document.getElementById('list');
   if(!list.length){
@@ -138,61 +174,88 @@ function render(){
     return;
   }
 
-  el.innerHTML = list.map((p,i)=>{
+  el.innerHTML = list.map(p=>{
     const urg = urgency(p.closing_date);
-    const dl = daysLeft(p.closing_date);
-    const sc = SRC_COLORS[p.source]||'#64748b';
-    return `<div class="card" onclick="openModal(${i}_${ALL.indexOf(p)})">
-      <div class="card-layout">
-        <div>
-          <div class="card-header">
-            <span class="badge ${urg}">${urg}</span>
-            <span class="src" style="background:${sc}">${p.source}</span>
-            <span style="font-size:11px;color:#475569">${p.province||'?'}</span>
-          </div>
-          <div class="card-title">${p.title||'Sans titre'}</div>
-          <div class="card-meta">
-            <span>🏢 ${p.owner||'N/D'}</span>
-            ${p.estimated_budget?`<span>💰 ${fmtBudget(p.estimated_budget)}</span>`:''}
-            ${p.ref_id?`<span style="color:#334155">#${p.ref_id}</span>`:''}
-          </div>
+    const dl  = daysLeft(p.closing_date);
+    const sc  = SRC_COLORS[p.source]||'#64748b';
+    const cote = p.cote_strategique||'?';
+    const cc  = COTE_COLORS[cote]||'#64748b';
+    const cbg = COTE_BG[cote]||'#f1f5f9';
+    const uc  = URG_COLORS[urg];
+
+    let badges = '';
+    if(p.prix&&p.prix!=='?')             badges+=`<span class="info-badge" style="background:#e0f2fe;color:#0369a1">Prix: ${p.prix}</span>`;
+    if(p.entrevue&&p.entrevue!=='?')     badges+=`<span class="info-badge" style="background:#fef9c3;color:#854d0e">Entrevue: ${p.entrevue}</span>`;
+    if(p.visite_obligatoire&&p.visite_obligatoire!=='?') badges+=`<span class="info-badge" style="background:#fce7f3;color:#9d174d">Visite: ${p.visite_obligatoire}</span>`;
+    if(p.format_ao&&p.format_ao!=='?')   badges+=`<span class="info-badge" style="background:#f3e8ff;color:#6b21a8">${p.format_ao}</span>`;
+
+    const resume = p.resume_comite||'';
+
+    return `<div class="card ${urg}" onclick="openModalData(${ALL.indexOf(p)})">
+      <div>
+        <div class="card-meta-top">
+          <span class="badge-urg ${urg}-badge">${urg}</span>
+          <span class="src-badge" style="background:${sc}">${p.source}</span>
+          <span style="color:#475569">${p.province||'?'}</span>
+          ${p.ref_id?`<span style="color:#334155;font-size:10px">#${p.ref_id}</span>`:''}
+          <span style="color:#334155">Pub. ${fmtDate(p.pub_date)}</span>
         </div>
-        <div class="card-right">
-          <div class="days" style="color:${urg==='URGENT'?'#ef4444':urg==='PRIORITAIRE'?'#f97316':'#22c55e'}">${dl!==null?dl+' j':'N/D'}</div>
-          <div style="font-size:10px;color:#475569">${fmtDate(p.closing_date)}</div>
-        </div>
+        <div class="card-title">${p.title||'Sans titre'}</div>
+        <div class="card-owner">🏢 ${p.owner||'N/D'}</div>
+        ${resume?`<div class="card-resume">${resume.slice(0,160)}</div>`:''}
+        ${badges?`<div class="card-badges">${badges}</div>`:''}
+      </div>
+      <div class="card-right">
+        <div class="days-val" style="color:${uc}">${dl!==null?dl:'N/D'}</div>
+        <div class="days-lbl">jours</div>
+        <div style="font-size:10px;color:#475569">${fmtDate(p.closing_date)}</div>
+        <div class="cote-badge" style="color:${cc};background:${cbg}">Cote ${cote}</div>
+        ${fmtBudget(p.estimated_budget)?`<div style="font-size:10px;color:#64748b;margin-top:4px">${fmtBudget(p.estimated_budget)}</div>`:''}
       </div>
     </div>`;
   }).join('');
-
-  // Fix onclick avec index global
-  el.querySelectorAll('.card').forEach((card,i)=>{
-    const p = list[i];
-    card.onclick = ()=>openModalData(p);
-  });
 }
 
-let currentP = null;
-function openModalData(p){
-  currentP = p;
+function openModalData(idx){
+  const p = ALL[idx];
+  if(!p) return;
   const urg = urgency(p.closing_date);
-  const dl = daysLeft(p.closing_date);
-  document.getElementById('modal-box').innerHTML = `
-    <div style="display:flex;justify-content:space-between;align-items:start;margin-bottom:16px">
-      <span class="badge ${urg}" style="font-size:11px;padding:4px 10px">${urg} — ${dl!==null?dl+' jour(s)':'N/D'}</span>
-      <button onclick="document.getElementById('modal').classList.remove('open')" style="background:none;border:none;color:#64748b;font-size:20px;cursor:pointer">✕</button>
-    </div>
-    <h2 style="font-size:16px;font-weight:700;color:#f1f5f9;margin:0 0 16px">${p.title||'Sans titre'}</h2>
-    ${[['Client',p.owner],['Province',p.province],['Budget',fmtBudget(p.estimated_budget)],
-       ['Clôture',fmtDate(p.closing_date)],['Référence',p.ref_id],['Source',p.source],
-       ['Cote',p.cote_strategique],['Prix',p.prix],['Entrevue',p.entrevue],
-       ['Visite',p.visite_obligatoire],['Format',p.format_ao],
-       ['Catégorie AO',p.categorie_ao]]
+  const dl  = daysLeft(p.closing_date);
+  const cote = p.cote_strategique||'?';
+  const cc  = COTE_COLORS[cote]||'#64748b';
 
-      .filter(([,v])=>v&&v!=='N/D'&&v!=='null')
-      .map(([k,v])=>`<div class="modal-row"><div class="modal-key">${k}</div><div>${v}</div></div>`).join('')}
-    ${p.summary?`<div style="background:#0f1117;border:1px solid #1e293b;border-radius:8px;padding:12px;font-size:12px;color:#94a3b8;line-height:1.6;margin-top:12px">${p.summary}</div>`:''}
-    <div style="margin-top:20px;display:flex;gap:10px">
+  const rows = [
+    ['Client',     p.owner],
+    ['Province',   p.province],
+    ['Référence',  p.ref_id],
+    ['Pub.',       fmtDate(p.pub_date)],
+    ['Clôture',    fmtDate(p.closing_date)],
+    ['Budget',     fmtBudget(p.estimated_budget)],
+    ['Cote',       p.cote_strategique],
+    ['Catégorie',  p.categorie_ao],
+    ['Prix',       p.prix],
+    ['Entrevue',   p.entrevue],
+    ['Visite',     p.visite_obligatoire],
+    ['Format',     p.format_ao],
+    ['Source',     p.source],
+  ].filter(([,v])=>v&&v!=='?'&&v!=='null'&&v!=='N/D')
+   .map(([k,v])=>`<div class="modal-row"><div class="modal-key">${k}</div><div class="modal-val">${v}</div></div>`)
+   .join('');
+
+  document.getElementById('modal-box').innerHTML = `
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:14px">
+      <div>
+        <span class="badge-urg ${urg}-badge" style="font-size:11px;padding:3px 10px">${urg} — ${dl!==null?dl+' jour(s)':'N/D'}</span>
+        ${cote!=='?'?`<span class="cote-badge" style="color:${cc};background:${COTE_BG[cote]||'#f1f5f9'};margin-left:6px">Cote ${cote}</span>`:''}
+      </div>
+      <button onclick="document.getElementById('modal').classList.remove('open')"
+        style="background:none;border:none;color:#64748b;font-size:22px;cursor:pointer;line-height:1">✕</button>
+    </div>
+    <h2 style="font-size:15px;font-weight:700;color:#f1f5f9;margin:0 0 14px;line-height:1.4">${p.title||'Sans titre'}</h2>
+    ${rows}
+    ${p.resume_comite?`<div style="background:#0f1117;border:1px solid #1e293b;border-radius:8px;padding:12px;font-size:11px;color:#94a3b8;line-height:1.6;margin-top:12px;font-style:italic">${p.resume_comite}</div>`:''}
+    ${p.summary&&p.summary!==p.resume_comite?`<div style="background:#0f1117;border:1px solid #1e293b;border-radius:8px;padding:12px;font-size:11px;color:#64748b;line-height:1.6;margin-top:8px">${p.summary.slice(0,300)}</div>`:''}
+    <div style="margin-top:18px">
       ${p.url?`<a href="${p.url}" target="_blank" class="btn">OUVRIR LA SOURCE →</a>`:''}
     </div>`;
   document.getElementById('modal').classList.add('open');
@@ -204,8 +267,7 @@ function closeModal(e){
 }
 
 load();
-setInterval(load, 300000); // Rafraîchit toutes les 5 min
+setInterval(load, 300000);
 </script>
 </body>
 </html>
-```
