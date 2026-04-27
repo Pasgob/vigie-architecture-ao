@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-24T22:22:16.416776",
-  "count": 37,
+  "updated_at": "2026-04-27T10:08:49.037584",
+  "count": 36,
   "projects": [
     {
       "fingerprint": "af1a713c81308d9c",
@@ -674,28 +674,6 @@
       "closing_date": "2026-04-30",
       "pub_date": "2026-03-09",
       "ref_id": "20127853",
-      "estimated_budget": null,
-      "prix": null,
-      "entrevue": null,
-      "visite_obligatoire": null,
-      "date_visite": null,
-      "format_ao": null,
-      "categorie_ao": null,
-      "cote_strategique": null,
-      "resume_comite": null
-    },
-    {
-      "fingerprint": "7f6c4ecfd83f9276",
-      "title": "Réaménagement de la rue de la Faune (PAM185459)",
-      "url": "https://www.seao.ca/OpportunityPublication/rechercheAO/Details/Avis?id=20131657",
-      "summary": "",
-      "source": "SEAO",
-      "province": "QC",
-      "owner": "Ville de Québec",
-      "category": "Entretien et réparation d’infrastructures routières",
-      "closing_date": "2026-04-27",
-      "pub_date": "2026-03-23",
-      "ref_id": "20131657",
       "estimated_budget": null,
       "prix": null,
       "entrevue": null,
