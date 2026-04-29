@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-29T10:00:40.505362",
+  "updated_at": "2026-04-29T11:42:40.152499",
   "count": 22,
   "projects": [
     {
@@ -9,7 +9,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Parc de la Capitaine-Molly-Kool (organisation municipale ou gouvernementale)",
+      "owner": "Parc de la Capitaine-Molly-Kool",
       "category": "Services de construction, de réparation et d’entretien d’immeubles",
       "closing_date": "2026-05-19",
       "pub_date": "2026-04-06",
@@ -22,7 +22,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "B",
-      "resume_comite": "Appel d'offres pour conception et construction d'un chalet avec jeux d'eau et patinoire couverte au parc municipal de Capitaine-Molly-Kool; opportunité de projet récréatif d'envergure locale."
+      "resume_comite": "Projet de conception et construction d'un chalet récréatif avec installations (jeux d'eau, patinoire couverte) dans un parc municipal du Québec - opportunité d'architecture institutionnelle/récréative."
     },
     {
       "fingerprint": "19aa7f3d08f7f284",
@@ -42,9 +42,9 @@
       "visite_obligatoire": "Oui",
       "date_visite": null,
       "format_ao": "Format lettre",
-      "categorie_ao": "OS à surveiller",
+      "categorie_ao": "OS à discuter",
       "cote_strategique": "B",
-      "resume_comite": "Appel d'offres municipal pour travaux d'infrastructure (égout, eau, voirie) sur deux rues à Montréal; à surveiller pour vérifier pertinence et budget."
+      "resume_comite": "Appel d'offres municipal pour travaux d'infrastructure (égout, aqueduc, voirie) sur deux axes routiers majeurs à Montréal ; pertinent pour partenariats avec firmes d'ingénierie."
     },
     {
       "fingerprint": "b2570884ff6692ee",
@@ -53,7 +53,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Municipalité (présumée)",
+      "owner": "Municipalité (8e Avenue)",
       "category": "Entretien et réparation d’infrastructures routières",
       "closing_date": "2026-04-30",
       "pub_date": "2026-04-10",
@@ -66,7 +66,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "C",
-      "resume_comite": "Aménagement de piste cyclable municipal en Outaouais (8e Avenue) - projet d'infrastructure locale de petite envergure, pertinent pour portfolio développement durable mais sans envergure budgétaire majeure."
+      "resume_comite": "Aménagement de piste cyclable municipal sur la 8e Avenue (Québec) - projet d'infrastructure de mobilité active de petite à moyenne envergure, sans données budgétaires ni délais disponibles au SEAO."
     },
     {
       "fingerprint": "36bf737bd29cd1c2",
@@ -88,7 +88,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "B",
-      "resume_comite": "Projet de conservation architecturale pour trois bâtiments patrimoniaux du Musée de Lachine; client municipal institutionnel avec potentiel de visibilité patrimoniale."
+      "resume_comite": "AO pour services d'architecture et ingénierie en conservation de trois bâtiments patrimoniaux du Musée de Lachine; client municipal/institutionnel de prestige nécessitant expertise en restauration."
     },
     {
       "fingerprint": "27b0fc15520ca57b",
@@ -97,7 +97,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "DGEQ (Directeur général des élections du Québec)",
+      "owner": "Directeur général des élections du Québec",
       "category": "Génie, architecture, recherche, sciences et technologie",
       "closing_date": "2026-05-07",
       "pub_date": "2026-04-07",
@@ -109,8 +109,8 @@
       "date_visite": null,
       "format_ao": "Format lettre",
       "categorie_ao": "OS à discuter",
-      "cote_strategique": "B",
-      "resume_comite": "Accompagnement stratégique en architecture d'affaires et d'entreprise pour une institution gouvernementale québécoise majeure - opportunité de contrat professionnel avec client institutionnel."
+      "cote_strategique": "A",
+      "resume_comite": "Accompagnement stratégique en architecture d'affaires et d'entreprise (DGEQ) - client gouvernemental potentiel à investiguer pour services de conseil haut de gamme."
     },
     {
       "fingerprint": "05f6a88237d466f4",
@@ -119,7 +119,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Caserne 3 Dion-Latour (client institutionnel/gouvernemental)",
+      "owner": "Caserne 3 Dion-Latour",
       "category": "Ingénierie des bâtiments",
       "closing_date": "2026-05-13",
       "pub_date": "2026-04-09",
@@ -132,7 +132,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "B",
-      "resume_comite": "Services d'architecture pour réfection toiture, CVAC et décarbonation d'une caserne gouvernementale québécoise; mandat potentiellement stratégique pour secteur institutionnel."
+      "resume_comite": "Appel d'offres pour services d'architecture en réfection de toiture, maintien CVAC et décarbonation d'une caserne québécoise; opportunité institutionnelle pertinente nécessitant clarification des dates et budget."
     },
     {
       "fingerprint": "d59b5b4e8b730efc",
@@ -154,7 +154,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "B",
-      "resume_comite": "Appel d'offres pour services professionnels en architecture pour la réfection du parement extérieur de l'école St-Viateur à Amos (client institutionnel municipal/scolaire)."
+      "resume_comite": "Appel d'offres en architecture pour réfection du parement extérieur de l'école St-Viateur à Amos (client institutionnel municipal) – projet de rénovation d'envergure moyenne à évaluer."
     },
     {
       "fingerprint": "760a2b2aceaa076b",
@@ -174,9 +174,9 @@
       "visite_obligatoire": null,
       "date_visite": null,
       "format_ao": "Format lettre",
-      "categorie_ao": "OS à discuter",
+      "categorie_ao": "OS à surveiller",
       "cote_strategique": "B",
-      "resume_comite": "Appel d'offres en urbanisme via SEAO pour services professionnels de refonte; pertinent pour ABCP mais nécessite consultation de l'avis détaillé pour budget, échéance et commanditaire."
+      "resume_comite": "Appel d'offres en urbanisme via SEAO pour services professionnels de refonte – correspond au domaine d'expertise d'ABCP mais requiert confirmation du client, budget et échéance."
     },
     {
       "fingerprint": "cd09053674041818",
@@ -185,7 +185,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Hôpital de Sept-Îles / Centre intégré de santé et de services sociaux de la Côte-Nord",
+      "owner": "Centre intégré de santé et de services sociaux (CISSS) de la Côte-Nord ou Ministère de la Santé",
       "category": "Services de construction, de réparation et d’entretien d’immeubles",
       "closing_date": "2026-06-10",
       "pub_date": "2026-04-09",
@@ -198,7 +198,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à discuter",
       "cote_strategique": "A",
-      "resume_comite": "Appel d'offres pour agrandissement et réaménagement majeur d'établissement hospitalier public en Côte-Nord ; client institutionnel de santé avec potentiel de budget important et rayonnement régional."
+      "resume_comite": "Agrandissement et réaménagement majeur d'établissement hospitalier en Côte-Nord; client institutionnel prioritaire, budget probablement substantiel, à suivre étroitement pour positionnement."
     },
     {
       "fingerprint": "00ccf5c542327b3f",
@@ -207,7 +207,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Centre de santé et de services sociaux de Saint-Jérôme (ou organisation équivalente)",
+      "owner": "Centre intégré de santé et de services sociaux (CISSS) des Laurentides / Hôpital régional de Saint-Jérôme",
       "category": "Construction d’installations de préparation",
       "closing_date": "2026-05-04",
       "pub_date": "2026-04-09",
@@ -218,9 +218,9 @@
       "visite_obligatoire": "Oui",
       "date_visite": null,
       "format_ao": "Format lettre",
-      "categorie_ao": "OS à discuter",
-      "cote_strategique": "A",
-      "resume_comite": "Travaux préparatoires pour agrandissement et réaménagement du plateau technique chirurgical de l'hôpital régional de Saint-Jérôme – projet institutionnel de santé majeur en milieu régional."
+      "categorie_ao": "OS à surveiller",
+      "cote_strategique": "B",
+      "resume_comite": "Travaux préparatoires pour agrandissement et réaménagement du plateau technique chirurgical à l'Hôpital régional de Saint-Jérôme; projet d'infrastructure de santé d'importance régionale."
     },
     {
       "fingerprint": "a8c34e31f66f3ac6",
@@ -229,7 +229,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Commission scolaire ou école québécoise",
+      "owner": "Commission scolaire ou établissement scolaire québécois",
       "category": "Besoins en personnel temporaire - architecture",
       "closing_date": "2026-04-30",
       "pub_date": "2026-04-09",
@@ -242,7 +242,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "B",
-      "resume_comite": "AO en architecture pour maintien d'actifs multi-écoles au Québec - secteur institutionnel municipal/scolaire, budget et échéances à clarifier via SEAO."
+      "resume_comite": "Appel d'offres pour services d'architecture en maintien d'actifs (rénovations/entretien) dans plusieurs écoles québécoises - opportunité de marché institutionnel à potentiel récurrent."
     },
     {
       "fingerprint": "fd0d284bd4f19bf3",
@@ -264,7 +264,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à discuter",
       "cote_strategique": null,
-      "resume_comite": "Appel d'offres pour rénovation intérieure (phase 5) publié sur SEAO - informations insuffisantes pour analyse complète (propriétaire, budget et date limite non fournis)."
+      "resume_comite": "Appel d'offres incomplet : rénovation intérieure phase 5 sur SEAO (QC), données insuffisantes pour analyse (budget, client, dates manquants)."
     },
     {
       "fingerprint": "f5da9870a8fa25fa",
@@ -286,7 +286,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "C",
-      "resume_comite": "AO pour aménagement d'un terrain de jeux multisports au QC via SEAO - pertinent pour ABCP mais détails insuffisants (budget et client inconnus); à clarifier via SEAO."
+      "resume_comite": "Appel d'offres pour aménagement de terrain multisports au Québec (source SEAO) - détails budgétaires et échéance à confirmer auprès du donneur d'ouvrage."
     },
     {
       "fingerprint": "8de09a261af0a387",
@@ -295,7 +295,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Établissement de santé animale (université ou institution)",
+      "owner": "Institution de santé animale (université ou établissement de recherche)",
       "category": "Services de construction, de réparation et d’entretien d’immeubles",
       "closing_date": "2026-05-07",
       "pub_date": "2026-04-10",
@@ -308,7 +308,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "B",
-      "resume_comite": "Réaménagement d'un département universitaire ou institutionnel de santé animale; suivi recommandé pour confirmer le budget et les échéances auprès de SEAO."
+      "resume_comite": "Réaménagement de département spécialisé en santé animale via SEAO; opportunité institutionnelle à valider pour pertinence et budget."
     },
     {
       "fingerprint": "08b4c72318b5a4a5",
@@ -330,7 +330,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "B",
-      "resume_comite": "Aménagement d'espace vert (phase 1) au Campus de la santé - projet institutionnel pertinent pour ABCP avec potentiel de phases supplémentaires."
+      "resume_comite": "Aménagement d'espace vert (verdissement phase 1) au Campus de la santé; opportunité institutionnelle pertinente pour ABCP en architecture paysagère."
     },
     {
       "fingerprint": "dcf170cd6e168a9b",
@@ -339,7 +339,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "École secondaire de la nouvelle-Ère",
+      "owner": "Commission scolaire ou centre de services scolaire - École secondaire de la nouvelle-Ère",
       "category": "Gymnase",
       "closing_date": "2026-04-30",
       "pub_date": "2026-04-10",
@@ -352,7 +352,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "B",
-      "resume_comite": "Réaménagement intérieur et ajout d'une palestre pour école secondaire québécoise – client institutionnel municipal à surveiller pour opportunité de marché scolaire."
+      "resume_comite": "Appel d'offres pour réaménagement intérieur et ajout de palestre dans une école secondaire québécoise - opportunité secteur éducation avec potentiel de relations institutionnelles."
     },
     {
       "fingerprint": "3e805466ed442af3",
@@ -361,7 +361,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "MTMD (Ministère des Transports et de la Mobilité durable) - DGATA",
+      "owner": "MTMD (DGATA)",
       "category": "Services d’ingénierie",
       "closing_date": "2026-05-11",
       "pub_date": "2026-04-10",
@@ -374,7 +374,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à discuter",
       "cote_strategique": "A",
-      "resume_comite": "Contrat-cadre pluriannuel du MTMD pour études, conception et surveillance d'infrastructures aéroportuaires au Québec ; opportunité majeure auprès d'un client institutionnel stratégique, à clarifier (budget, fermeture, modalités)."
+      "resume_comite": "Contrat-cadre à plusieurs prestataires du MTMD pour études de conception et surveillance d'infrastructures aéroportuaires québécoises - opportunité stratégique avec client gouvernemental majeur."
     },
     {
       "fingerprint": "8af0d28b150c5856",
@@ -383,7 +383,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Ville de Québec - Direction de la planification et de la mise en valeur du territoire (SUM)",
+      "owner": "Ville de Montréal - Service de l'urbanisme et de la mobilité (SUM)",
       "category": "Ingénierie et aménagement urbain",
       "closing_date": "2026-05-05",
       "pub_date": "2026-03-30",
@@ -396,7 +396,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "B",
-      "resume_comite": "Appel d'offres multidisciplinaire en aménagement urbain pour la Ville de Québec; opportunité stratégique pour services de planification territoriale auprès d'un client municipal majeur."
+      "resume_comite": "Appel d'offres multidisciplinaire en aménagement urbain pour la Ville de Montréal; opportunité majeure d'engagement auprès d'un client institutionnel municipal de premier plan."
     },
     {
       "fingerprint": "7d32c1d37dd84524",
@@ -418,7 +418,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à discuter",
       "cote_strategique": "A",
-      "resume_comite": "Appel d'offres majeur en mode RPI pour réfection de l'enveloppe extérieure du Palais de justice de Québec - projet institutionnel stratégique auprès d'un client gouvernemental de premier plan."
+      "resume_comite": "Appel d'offres en mode RPI pour la réfection de l'enveloppe extérieure du Palais de justice de Québec – projet institutionnel majeur requérant expertise en restauration et conformité."
     },
     {
       "fingerprint": "9506bcee5e9009c5",
@@ -440,7 +440,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "B",
-      "resume_comite": "Appel d'offres municipal pour conception-construction d'un chalet, installations aquatiques et aménagements au parc Laval-Ouest; opportunité de projet public récréatif avec client municipal de territoire stratégique."
+      "resume_comite": "AO pour conception et construction d'un chalet, jeux d'eau et installations au parc Laval-Ouest (client municipal, budget et échéancier à confirmer via SEAO)."
     },
     {
       "fingerprint": "eaaa757051ec4438",
@@ -449,7 +449,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "MRC de Beauharnois-Salaberry",
+      "owner": "Inconnu - À vérifier sur SEAO",
       "category": "Aménagement ou réaménagement de parcs et de jardins",
       "closing_date": "2026-05-05",
       "pub_date": "2026-03-30",
@@ -460,9 +460,9 @@
       "visite_obligatoire": null,
       "date_visite": null,
       "format_ao": "Format lettre",
-      "categorie_ao": "OS à discuter",
+      "categorie_ao": "OS à surveiller",
       "cote_strategique": "B",
-      "resume_comite": "Appel d'offres multi-sites (6 sites) pour aménagement dans cadre Projet Signature Innovation - détails budgétaires et client à confirmer via SEAO."
+      "resume_comite": "Appel d'offres pour aménagement multi-sites (6 emplacements) dans le cadre d'un projet d'innovation; nécessite consultation SEAO pour budget, échéance et détails du client."
     },
     {
       "fingerprint": "27c72e4d9a6ec781",
@@ -471,7 +471,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Municipalité",
+      "owner": "Municipalité (garage municipal)",
       "category": "Ingénierie des bâtiments",
       "closing_date": "2026-05-13",
       "pub_date": "2026-03-31",
@@ -484,7 +484,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "B",
-      "resume_comite": "AO de conception de plans et devis pour garage municipal – client public majeur, pertinent pour ABCP mais budget et échéance à confirmer via SEAO."
+      "resume_comite": "AO municipale pour conception plans/devis d'un garage municipal au Québec – client institutionnel local à relancer pour détails budgétaires et délais."
     }
   ]
 }
