@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-06T10:15:44.016673",
+  "updated_at": "2026-05-06T12:28:42.340726",
   "count": 68,
   "projects": [
     {
@@ -21,8 +21,8 @@
       "date_visite": null,
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
-      "cote_strategique": "C",
-      "resume_comite": "Appel d'offres pour aménagement de parc urbain à Montréal (intersection Meunier/Saint-Luc) - budget et échéancier à confirmer via SEAO."
+      "cote_strategique": "B",
+      "resume_comite": "Aménagement de parc urbain à Montréal (intersection Meunier/Saint-Luc) - opportunité municipale d'espaces publics, pertinente pour le portefeuille paysager d'ABCP."
     },
     {
       "fingerprint": "979159ba99b659a5",
@@ -31,20 +31,20 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Municipalité (à confirmer via SEAO)",
+      "owner": "Municipalité (à confirmer)",
       "category": "Aménagement de terrain",
       "closing_date": "2026-05-28",
       "pub_date": "2026-04-27",
       "ref_id": "20140386",
       "estimated_budget": null,
       "prix": "Oui",
-      "entrevue": null,
+      "entrevue": "Non",
       "visite_obligatoire": null,
       "date_visite": null,
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "C",
-      "resume_comite": "Appel d'offres municipal pour aménagement d'aire de jeux sur terre-plein urbain; projet de faible envergure typique du portefeuille ABCP, nécessite consultation SEAO pour budget et délai."
+      "resume_comite": "Appel d'offres municipal pour aménagement d'aire de jeux enfants (petit projet local, présence faible pour ABCP)."
     },
     {
       "fingerprint": "905a833edc98af59",
@@ -61,12 +61,12 @@
       "estimated_budget": null,
       "prix": "Oui",
       "entrevue": null,
-      "visite_obligatoire": null,
+      "visite_obligatoire": "Oui",
       "date_visite": null,
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "B",
-      "resume_comite": "Appel d'offres pour services d'architecture et d'ingénierie - réfection d'équipement sportif municipal montréalais; opportunité de présence auprès de la Ville de Montréal."
+      "resume_comite": "AO pour services en architecture et ingénierie - réfection centre sportif municipal montréalais; secteur public pertinent pour ABCP, visite de site probable, budget et échéance à confirmer via SEAO."
     },
     {
       "fingerprint": "7be7e45470cd0a3b",
@@ -75,7 +75,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Arrondissement de Verdun",
+      "owner": "Ville de Montréal - Arrondissement de Verdun",
       "category": "Aménagement ou réaménagement de parcs et de jardins",
       "closing_date": "2026-05-26",
       "pub_date": "2026-04-29",
@@ -88,7 +88,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "B",
-      "resume_comite": "Réaménagement de parc municipal à Verdun (client public local) - opportunité à valider auprès de SEAO pour détails budgétaires et échéancier."
+      "resume_comite": "Appel d'offres pour réaménagement de parc municipal à Verdun; opportunité de clientèle municipale montréalaise à évaluer selon les détails complets du cahier des charges."
     },
     {
       "fingerprint": "340229914252fdaf",
@@ -109,8 +109,8 @@
       "date_visite": null,
       "format_ao": "Format lettre",
       "categorie_ao": "OS à discuter",
-      "cote_strategique": "B",
-      "resume_comite": "Appel d'offres pour services d'architecture du premier pavillon du nouveau quartier universitaire de l'UQTR à Terrebonne; client institutionnel majeur, projet d'envergure à suivre de près."
+      "cote_strategique": "A",
+      "resume_comite": "Services d'architecture pour premier pavillon du quartier universitaire UQTR à Terrebonne - projet institutionnel majeur de niveau universitaire, budget et délai à confirmer auprès de SEAO."
     },
     {
       "fingerprint": "153694bcc180165a",
@@ -119,20 +119,20 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Non spécifié",
+      "owner": "Ville De Montréal - Arrondissement du Sud-Ouest",
       "category": "Services d’ingénierie",
       "closing_date": "2026-06-02",
       "pub_date": "2026-05-01",
       "ref_id": "20141389",
       "estimated_budget": null,
-      "prix": "Oui",
+      "prix": null,
       "entrevue": null,
       "visite_obligatoire": null,
       "date_visite": null,
-      "format_ao": "Format lettre",
-      "categorie_ao": "OS à discuter",
-      "cote_strategique": "B",
-      "resume_comite": "Entente-cadre pluriannuelle pour services architecture/ingénierie via SEAO - budget et échéance à confirmer auprès de la source."
+      "format_ao": null,
+      "categorie_ao": null,
+      "cote_strategique": null,
+      "resume_comite": null
     },
     {
       "fingerprint": "8195342908eb89bb",
@@ -154,7 +154,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "C",
-      "resume_comite": "Projet d'aménagement de 4 classes via SEAO (QC) - budget et propriétaire à confirmer auprès de la source."
+      "resume_comite": "Aménagement de 4 classes via SEAO - projet de petite envergure typique du secteur institutionnel québécois, à surveiller pour opportunité locale."
     },
     {
       "fingerprint": "558754d9bfa6bc03",
@@ -163,7 +163,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Inconnu",
+      "owner": "Inconnu - mentionner \"centrale\" (municipalité ou organisme public)",
       "category": "Aménagement ou réaménagement des places publiques",
       "closing_date": "2026-05-25",
       "pub_date": "2026-04-28",
@@ -176,7 +176,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à discuter",
       "cote_strategique": "B",
-      "resume_comite": "Appel d'offres pour aménagement de parc (centrales hydroélectriques ou installations similaires) - Budget et échéances à confirmer via SEAO."
+      "resume_comite": "Appel d'offres pour aménagement de parc (centrale) - détails manquants sur SEAO, budget et échéance à confirmer auprès de la source."
     },
     {
       "fingerprint": "401990246b9d047a",
@@ -185,7 +185,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Municipalité de Sainte-Geneviève-de-Batiscan.",
+      "owner": "PAFIRSPA",
       "category": "Structures et bâtiments commerciaux ou de loisirs",
       "closing_date": "2026-05-19",
       "pub_date": "2026-04-27",
@@ -198,7 +198,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "C",
-      "resume_comite": "Appel d'offres pour conception-construction d'un préau pour patinoire extérieure (PAFIRSPA) au Québec ; pertinent pour expertise en ouvrages récréatifs extérieurs, mais détails (budget, échéance, maître de l'ouvrage) à confirmer via SEAO."
+      "resume_comite": "Appel d'offres pour conception-construction d'un préau pour patinoire extérieure (PAFIRSPA) au Québec; budget et échéance non précisés dans les données disponibles."
     },
     {
       "fingerprint": "a77f0c78e80a8420",
@@ -207,7 +207,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Ministère des Finances",
+      "owner": "AKS",
       "category": "Services-conseils en technologies de l’information",
       "closing_date": "2026-05-25",
       "pub_date": "2026-04-28",
@@ -219,8 +219,8 @@
       "date_visite": null,
       "format_ao": "Format lettre",
       "categorie_ao": "OS à discuter",
-      "cote_strategique": "B",
-      "resume_comite": "Appel d'offres pour services-conseils en architecture (AKS) publié sur SEAO - Informations insuffisantes pour évaluation complète, à valider auprès de la source."
+      "cote_strategique": "C",
+      "resume_comite": "Services-conseils en architecture publiés sur SEAO par AKS - budget et échéance à confirmer auprès de la source."
     },
     {
       "fingerprint": "44fb25e0aaca5d7c",
@@ -241,8 +241,8 @@
       "date_visite": null,
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
-      "cote_strategique": "B",
-      "resume_comite": "Appel d'offres municipal pour aménagement récréatif (patinoire + pickleball) - Opportunité de projet d'infrastructure locale typique du portefeuille ABCP."
+      "cote_strategique": "C",
+      "resume_comite": "Appel d'offres municipal pour aménagement d'équipements récréatifs (patinoire + terrains de pickleball) au Parc du Ruisseau; budget et échéance à confirmer auprès de SEAO."
     },
     {
       "fingerprint": "86a6785c8b1fcb26",
@@ -251,7 +251,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "DGATA (Direction générale de l'aviation et des transports aériens)",
+      "owner": "DGATA (Direction générale de l'aviation et des affaires terrestres)",
       "category": "Services d’ingénierie",
       "closing_date": "2026-05-29",
       "pub_date": "2026-04-28",
@@ -264,7 +264,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à discuter",
       "cote_strategique": "A",
-      "resume_comite": "CEDPP en ingénierie pour études d'opportunité et conception d'infrastructures aéroportuaires fédérales (sud 55e parallèle) - Client institutionnel majeur, budget et délai à confirmer auprès de SEAO."
+      "resume_comite": "CEDPP en ingénierie pour études d'opportunité et conception aux sites aéroportuaires du sud du 55e parallèle (client fédéral majeur); pertinent pour ABCP si architecture impliquée."
     },
     {
       "fingerprint": "5e8ac25f35c50c08",
@@ -273,7 +273,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "DGATA (Direction générale de l'aviation et des transports aériens)",
+      "owner": "DGATA (Direction générale de l'aviation et du transport aérien)",
       "category": "Services d’ingénierie",
       "closing_date": "2026-05-29",
       "pub_date": "2026-04-28",
@@ -281,12 +281,12 @@
       "estimated_budget": null,
       "prix": "Oui",
       "entrevue": null,
-      "visite_obligatoire": "Oui",
+      "visite_obligatoire": null,
       "date_visite": null,
       "format_ao": "Format lettre",
       "categorie_ao": "OS à discuter",
       "cote_strategique": "A",
-      "resume_comite": "CEDPP en ingénierie pour études d'opportunité et conception aux aéroports du Nunavik (nord du 55e parallèle) - client institutionnel majeur, dossier complexe en région nordique éloignée."
+      "resume_comite": "CEDPP en ingénierie pour études d'opportunité et conception sur sites aéroportuaires du Nunavik (client gouvernemental, infrastructure stratégique nordique)."
     },
     {
       "fingerprint": "222d9fb41eb997dc",
@@ -303,12 +303,34 @@
       "estimated_budget": null,
       "prix": "Oui",
       "entrevue": null,
-      "visite_obligatoire": "Oui",
+      "visite_obligatoire": null,
       "date_visite": null,
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "B",
-      "resume_comite": "Réaménagement et réfection d'une unité de soins en établissement de santé (CHSLD) - client institutionnel avec potentiel de mandats récurrents en santé."
+      "resume_comite": "Réaménagement et réfection d'unité de soins en CHSLD (secteur institutionnel prioritaire pour ABCP); budget et échéances à confirmer via SEAO."
+    },
+    {
+      "fingerprint": "c5b39e867096c501",
+      "title": "Conception & Réalisation du site Web de l’INRS",
+      "url": "https://www.seao.ca/OpportunityPublication/rechercheAO/Details/Avis?id=20142180",
+      "summary": "",
+      "source": "SEAO",
+      "province": "QC",
+      "owner": "INRS (Institut national de la recherche scientifique)",
+      "category": "Génie, architecture, recherche, sciences et technologie",
+      "closing_date": "2026-05-25",
+      "pub_date": "2026-04-29",
+      "ref_id": "20142180",
+      "estimated_budget": null,
+      "prix": "Oui",
+      "entrevue": null,
+      "visite_obligatoire": "Non",
+      "date_visite": null,
+      "format_ao": "Format lettre",
+      "categorie_ao": "OS à surveiller",
+      "cote_strategique": "A",
+      "resume_comite": "Appel d'offres pour conception et réalisation du site web de l'INRS, client institutionnel majeur québécois; pertinence confirmée mais détails essentiels à obtenir du SEAO."
     },
     {
       "fingerprint": "b8169dfb49c3244d",
@@ -330,7 +352,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "B",
-      "resume_comite": "Aménagement d'infrastructure publique (marché + halte routière) - opportunité en mobilité urbaine à investiguer auprès de SEAO pour détails budgétaires et échéance."
+      "resume_comite": "Aménagement d'un marché public et halte routière urbaine au Québec - projet municipal potentiel à qualifier auprès de SEAO pour obtenir les paramètres détaillés (budget, échéance, maître d'ouvrage)."
     },
     {
       "fingerprint": "c85680394f0f0098",
@@ -352,7 +374,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "C",
-      "resume_comite": "AO pour services d'architecture en maçonnerie et fenêtres sur SEAO – données insuffisantes pour évaluation complète, à valider auprès de la source."
+      "resume_comite": "AO pour services d'architecture sur projet de remplacement de maçonnerie et fenêtres via SEAO; budget et dates à confirmer auprès de la source."
     },
     {
       "fingerprint": "2db508f8bb9761eb",
@@ -369,12 +391,12 @@
       "estimated_budget": null,
       "prix": "Oui",
       "entrevue": null,
-      "visite_obligatoire": null,
+      "visite_obligatoire": "Oui",
       "date_visite": null,
       "format_ao": "Format lettre",
       "categorie_ao": "OS à discuter",
       "cote_strategique": "A",
-      "resume_comite": "AO pour services d'aménagement urbain du réaménagement de la place de l'Assemblée-Nationale - client institutionnel majeur, projet de haute visibilité civique."
+      "resume_comite": "Appel d'offres pour services professionnels en aménagement urbain du réaménagement de la place de l'Assemblée-Nationale; client institutionnel majeur, pertinent pour le positionnement d'ABCP en projets publics de prestige."
     },
     {
       "fingerprint": "430fd0f84e214b8a",
@@ -411,14 +433,14 @@
       "pub_date": "2026-05-01",
       "ref_id": "20142737",
       "estimated_budget": null,
-      "prix": "Oui",
+      "prix": null,
       "entrevue": null,
       "visite_obligatoire": null,
       "date_visite": null,
-      "format_ao": "Format lettre",
-      "categorie_ao": "OS à surveiller",
-      "cote_strategique": "B",
-      "resume_comite": "Réaménagement parc (phase 3) via SEAO - vérifier budget et proprio pour évaluer pertinence stratégique."
+      "format_ao": null,
+      "categorie_ao": null,
+      "cote_strategique": null,
+      "resume_comite": null
     },
     {
       "fingerprint": "bb2e46b51f228f24",
@@ -440,7 +462,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "C",
-      "resume_comite": "Réaménagement de quatre locaux (A-112, A-114, A-014, D-111) - budget et client non spécifiés dans le titre, à valider auprès de SEAO."
+      "resume_comite": "Réaménagement intérieur de locaux multi-étages (province QC, source SEAO) - budget et détails à clarifier via plateforme."
     },
     {
       "fingerprint": "400ae08d39a97b42",
@@ -462,7 +484,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "B",
-      "resume_comite": "AO pour l'élaboration du PFT d'un projet municipal de réaménagement du Vieux Bureau de Poste à Lévis; opportunité de services professionnels d'architecture pour phase préliminaire."
+      "resume_comite": "Appel d'offres pour l'élaboration du programme fonctionnel et technique (PFT) d'un projet d'agrandissement et réaménagement du Vieux Bureau de Poste à Lévis – client municipal, opportunité de positionnement stratégique en patrimoine."
     },
     {
       "fingerprint": "8af0d28b150c5856",
@@ -471,7 +493,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Direction de la planification et de la mise en valeur du territoire, Service de l'urbanisme et de la mobilité (SUM)",
+      "owner": "Ville de Québec - Service de l'urbanisme et de la mobilité (SUM)",
       "category": "Ingénierie et aménagement urbain",
       "closing_date": "2026-05-19",
       "pub_date": "2026-03-30",
@@ -484,7 +506,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "B",
-      "resume_comite": "Appel d'offres multidisciplinaire en aménagement urbain pour une municipalité québécoise (SUM) - secteur d'expertise ABCP aligné avec services professionnels urbains."
+      "resume_comite": "Appel d'offres multidisciplinaire en aménagement urbain pour la Ville de Québec (SUM) - client institutionnel municipal de premier plan à surveiller de près."
     },
     {
       "fingerprint": "94b883bbd6dd630e",
@@ -493,7 +515,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Municipalité de Chute-Hemmings ou Centre-du-Québec",
+      "owner": "Centre-du-Québec / Chute-Hemmings",
       "category": "Construction lourde",
       "closing_date": "2026-05-19",
       "pub_date": "2025-12-22",
@@ -506,7 +528,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "B",
-      "resume_comite": "Appel de propositions en conception-construction progressif pour la réhabilitation d'un évacuateur en Centre-du-Québec; opportunité municipale à potentiel pour infrastructures hydrauliques spécialisées."
+      "resume_comite": "Appel de propositions en conception-construction progressif pour la réhabilitation d'un évacuateur en région Centre-du-Québec; opportunité municipale de complexité structurelle modérée nécessitant expertise en génie hydrique."
     },
     {
       "fingerprint": "b179fa3c26a344f8",
@@ -515,7 +537,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Hôpital Maisonneuve-Rosemont (HMR)",
+      "owner": "HMR (Hôpital Maisonneuve-Rosemont)",
       "category": "Construction et maintenance de bâtiments ou d’installations",
       "closing_date": "2026-05-07",
       "pub_date": "2026-02-26",
@@ -527,8 +549,8 @@
       "date_visite": null,
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
-      "cote_strategique": "B",
-      "resume_comite": "Appel d'offres pour aménagement de salles spécialisées d'angiographie à HMR (client institutionnel majeur du réseau santé québécois); à surveiller pour expertise médicale requise."
+      "cote_strategique": "A",
+      "resume_comite": "Appel d'offres pour aménagement spécialisé (angiographie) au pavillon Maisonneuve de HMR, client institutionnel majeur en santé."
     },
     {
       "fingerprint": "9506bcee5e9009c5",
@@ -550,7 +572,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "B",
-      "resume_comite": "Appel d'offres municipal (Ville de Laval) pour conception et construction d'équipements récréatifs au parc Laval-Ouest; pertinent pour les services d'architecture."
+      "resume_comite": "Appel d'offres municipal pour la conception et construction d'un chalet avec jeux d'eau au parc Laval-Ouest; client institutional majeur régional à surveiller."
     },
     {
       "fingerprint": "93fc4de5393acfc0",
@@ -559,7 +581,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Ville de Baie-Comeau ou organisme municipal",
+      "owner": "Municipalité de Baie-Comeau",
       "category": "Services de construction, de réparation et d’entretien d’immeubles",
       "closing_date": "2026-05-07",
       "pub_date": "2026-03-05",
@@ -571,8 +593,8 @@
       "date_visite": null,
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
-      "cote_strategique": "C",
-      "resume_comite": "Réaménagement d'un bâtiment existant à Baie-Comeau pour accueil de nouveaux occupants – projet municipal de faible à moyen budget, pertinent pour développer notre portefeuille en Côte-Nord."
+      "cote_strategique": "B",
+      "resume_comite": "Réaménagement de bâtiment pour nouveaux occupants à Baie-Comeau (Côte-Nord) — projet municipal à surveiller pour information client."
     },
     {
       "fingerprint": "bf746d26c067316a",
@@ -594,7 +616,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "C",
-      "resume_comite": "Appel d'offres pour réfection et aménagement de cour d'école au Québec - projet municipal typique d'envergure modérée à confirmer auprès de SEAO."
+      "resume_comite": "Réfection et aménagement de cour d'école via SEAO — projet municipal typique de petite à moyenne envergure, pertinent pour le portfolio scolaire d'ABCP mais budget et délais à confirmer."
     },
     {
       "fingerprint": "4901510d495a2d33",
@@ -616,7 +638,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "B",
-      "resume_comite": "Appel d'offres en aménagement structurel pour équipements d'imagerie médicale au Québec – vérifier les détails du SEAO pour budget, échéance et maître de l'ouvrage."
+      "resume_comite": "Appel d'offres pour aménagement structurel d'équipements d'imagerie médicale au Québec; détails complets à consulter sur le portail SEAO."
     },
     {
       "fingerprint": "6845276fc870b0fe",
@@ -625,7 +647,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Municipalité (inféré du titre)",
+      "owner": "Ville de Magog.",
       "category": "Rue, avenue, route ou boulevard",
       "closing_date": "2026-05-08",
       "pub_date": "2026-03-20",
@@ -638,7 +660,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "B",
-      "resume_comite": "Appel d'offres municipal pour réfection et aménagement de rue principale; budget et dates manquants sur SEAO—à valider auprès de la source pour pertinence stratégique."
+      "resume_comite": "AO pour travaux de réfection et aménagement d'une rue (probablement municipale) - pertinent pour ABCP si budget <5M$ ou délai extended."
     },
     {
       "fingerprint": "2c0f37ffaf14c03f",
@@ -647,7 +669,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Inconnu - À confirmer via SEAO",
+      "owner": "CHU Ste-Justine",
       "category": "Construction et maintenance de bâtiments ou d’installations",
       "closing_date": "2026-05-08",
       "pub_date": "2026-03-20",
@@ -658,9 +680,9 @@
       "visite_obligatoire": null,
       "date_visite": null,
       "format_ao": "Format lettre",
-      "categorie_ao": "OS à surveiller",
-      "cote_strategique": "C",
-      "resume_comite": "AO pour réaménagement de cliniques (architecture/rénovation) via SEAO - budget et échéance à confirmer auprès de la source."
+      "categorie_ao": "OS à discuter",
+      "cote_strategique": "B",
+      "resume_comite": "Réaménagement de cliniques - appel d'offres pour entrepreneur général via SEAO, budget et échéance à confirmer auprès de la source."
     },
     {
       "fingerprint": "a706a0e8e9cf5b42",
@@ -682,7 +704,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "C",
-      "resume_comite": "Aménagement d'une halte piétonne-cycliste sur le parcours Gouin; opportunité locale de petit à moyen budget en design urbain."
+      "resume_comite": "Aménagement de halte piétonne et cycliste sur le parcours Gouin; mandat municipal de faible à moyen budget, opportunité pour portfolio en mobilité active."
     },
     {
       "fingerprint": "f2b4e24c41364cbf",
@@ -704,7 +726,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "C",
-      "resume_comite": "Réaménagement de bureaux à Sorel-Tracy via SEAO; pertinent pour ABCP mais manque d'informations critiques (budget, délai, détails du projet) à clarifier."
+      "resume_comite": "Réaménagement de bureaux à Sorel-Tracy; budget et échéance à confirmer via SEAO."
     },
     {
       "fingerprint": "d0ab2ead5b002052",
@@ -713,7 +735,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Ville de Montréal",
+      "owner": "Ville de Montréal - Service des grands parcs",
       "category": "Services de système d'information géographique (sig)",
       "closing_date": "2026-05-21",
       "pub_date": "2026-03-30",
@@ -726,7 +748,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "B",
-      "resume_comite": "Appel d'offres de la Ville de Montréal pour services intégrés (design, ingénierie, disciplines complémentaires) relatif à une nouvelle famille de signalétique corporative pour les grands parcs du réseau montréalais."
+      "resume_comite": "AO pour services de design, ingénierie et disciplines complémentaires relatifs au développement d'une signalétique corporative pour le réseau des grands parcs montréalais - opportunité municipale pertinente en design urbain et wayfinding."
     },
     {
       "fingerprint": "af1a713c81308d9c",
@@ -748,7 +770,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "B",
-      "resume_comite": "Appel d'offres pour conception et construction d'un chalet municipal avec équipements récréatifs (jeux d'eau et patinoire couverte); opportunité pour projets de loisir publics."
+      "resume_comite": "Appel d'offres pour conception et construction d'un chalet récréatif avec équipements (jeux d'eau, patinoire couverte) dans un parc municipal québécois - à valider avec SEAO pour détails budget/délais."
     },
     {
       "fingerprint": "ac18ac2d10c46710",
@@ -770,7 +792,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "C",
-      "resume_comite": "Rénovation des finis intérieurs pour établissement scolaire québécois; opportunité de projet éducatif de petite à moyenne envergure via SEAO."
+      "resume_comite": "Rénovation des finis intérieurs pour établissement scolaire primaire ; opportunité de projet institutionnel local mais nécessite confirmation du budget et des délais via SEAO."
     },
     {
       "fingerprint": "eaaa757051ec4438",
@@ -779,7 +801,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Inconnu - À confirmer via SEAO",
+      "owner": "Inconnu",
       "category": "Aménagement ou réaménagement de parcs et de jardins",
       "closing_date": "2026-05-13",
       "pub_date": "2026-03-30",
@@ -790,9 +812,9 @@
       "visite_obligatoire": null,
       "date_visite": null,
       "format_ao": "Format lettre",
-      "categorie_ao": "OS à surveiller",
+      "categorie_ao": "OS à discuter",
       "cote_strategique": "B",
-      "resume_comite": "AO pour aménagement multisites (6 sites) - Projet Signature Innovation au QC; pertinent pour ABCP mais budget et dates critiques à clarifier via SEAO."
+      "resume_comite": "Projet d'aménagement multi-sites (6 lieux) pour Initiative Signature Innovation au Québec - budget et détails à confirmer auprès de SEAO."
     },
     {
       "fingerprint": "f69d2574953d4acc",
@@ -814,7 +836,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à discuter",
       "cote_strategique": "B",
-      "resume_comite": "Appel d'offres pour services architecturaux et d'ingénierie - rénovation caserne 43, Ville de Montréal; budget et délais à confirmer sur SEAO."
+      "resume_comite": "Appel d'offres pour services professionnels d'architecture et ingénierie pour rénovation de caserne pompiers Montréal - client institutionnel majeur à surveiller."
     },
     {
       "fingerprint": "20647ab45ea16d84",
@@ -835,8 +857,8 @@
       "date_visite": null,
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
-      "cote_strategique": "C",
-      "resume_comite": "Aménagement de piste cyclable municipal à Anjou (2026) - projet de faible envergure typique, à surveiller pour expérience en mobilité active."
+      "cote_strategique": "B",
+      "resume_comite": "Appel d'offres pour l'aménagement d'une piste cyclable municipale à Anjou - projet infrastructure/mobilité active de portée locale."
     },
     {
       "fingerprint": "36bf737bd29cd1c2",
@@ -858,7 +880,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "B",
-      "resume_comite": "Appel d'offres pour services en architecture et ingénierie portant sur la conservation de trois bâtiments patrimoniaux du Musée de Lachine; client institutionnel municipal d'intérêt pour ABCP."
+      "resume_comite": "AO pour services d'architecture et ingénierie en conservation-restauration de trois bâtiments patrimoniaux du Musée de Lachine; client municipal de prestige avec mandat de préservation historique aligné aux compétences d'ABCP."
     },
     {
       "fingerprint": "c185a4cdb32ef2fe",
@@ -875,12 +897,12 @@
       "estimated_budget": null,
       "prix": "Oui",
       "entrevue": null,
-      "visite_obligatoire": "Oui",
+      "visite_obligatoire": null,
       "date_visite": null,
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "B",
-      "resume_comite": "AO pour remplacement de revêtement en gazon synthétique intérieur au Stade de soccer de Montréal - projet municipal de spécialité en infrastructure sportive."
+      "resume_comite": "Appel d'offres municipal pour remplacement de revêtement de gazon synthétique au Stade de soccer de Montréal; opportunité pour services techniques en infrastructure sportive."
     },
     {
       "fingerprint": "15864c888869418a",
@@ -889,7 +911,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Organisation municipale ou gouvernementale (à confirmer via SEAO)",
+      "owner": "Municipalité ou organisme public (à confirmer via SEAO)",
       "category": "Services d’ingénierie",
       "closing_date": "2026-05-21",
       "pub_date": "2026-04-13",
@@ -902,7 +924,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "B",
-      "resume_comite": "Appel d'offres SEAO pour services en architecture et ingénierie de projets piscines/jeux d'eau au QC; pertinent pour ABCP mais détails critiques manquants (budget, échéance, client)—à consulter directement sur SEAO."
+      "resume_comite": "Appel d'offres pour services d'architecture et d'ingénierie sur projets de piscines/jeux d'eau au QC - secteur municipal/institutionnel pertinent pour ABCP."
     },
     {
       "fingerprint": "760a2b2aceaa076b",
@@ -924,7 +946,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à discuter",
       "cote_strategique": "B",
-      "resume_comite": "AO pour services professionnels en urbanisme (refonte) via SEAO - informations limitées, budget et échéance à confirmer auprès de la source."
+      "resume_comite": "Appel d'offres pour services professionnels en refonte urbanisme via SEAO; données complètes manquantes - requiert consultation du document complet sur SEAO pour détails critiques."
     },
     {
       "fingerprint": "9d07c351a3b76fee",
@@ -933,7 +955,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Ville de Victoria (ou municipalité gestionnaire du Parc Victoria)",
+      "owner": "Ville/Municipalité (Parc Victoria)",
       "category": "Terrain de sport",
       "closing_date": "2026-05-11",
       "pub_date": "2026-04-09",
@@ -945,21 +967,21 @@
       "date_visite": null,
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
-      "cote_strategique": "C",
-      "resume_comite": "Réaménagement de terrains de tennis dans un parc municipal - projet typique municipal de petite à moyenne envergure, à surveiller pour la qualité du client et les délais."
+      "cote_strategique": "B",
+      "resume_comite": "Appel d'offres pour réaménagement de terrains de tennis dans un parc municipal québécois; projet typique de travaux extérieurs/sports nécessitant expertise en aménagement."
     },
     {
-      "fingerprint": "4964242c260dd89c",
-      "title": "Contrat pour la réalisation de travaux relatifs à l’aménagement d’une piste cyclable sur le chemin de la Butte (Phase I) ",
-      "url": "https://www.seao.ca/OpportunityPublication/rechercheAO/Details/Avis?id=20137518",
+      "fingerprint": "e15f77dbd2b67b10",
+      "title": "Contrat pour la réalisation de travaux relatifs à l’aménagement d’une piste cyclable sur le chemin de la Butte (Phase II) ",
+      "url": "https://www.seao.ca/OpportunityPublication/rechercheAO/Details/Avis?id=20137522",
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Municipalité (à confirmer via SEAO)",
+      "owner": "Municipalité (chemin de la Butte)",
       "category": "Piste cyclable",
-      "closing_date": "2026-05-11",
+      "closing_date": "2026-05-14",
       "pub_date": "2026-04-10",
-      "ref_id": "20137518",
+      "ref_id": "20137522",
       "estimated_budget": null,
       "prix": "Oui",
       "entrevue": null,
@@ -968,7 +990,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "B",
-      "resume_comite": "Appel d'offres pour aménagement de piste cyclable phase 1 sur chemin municipal québécois; contrat de travaux de génie civil/architecture paysagère potentiellement pertinent pour ABCP selon détails complets sur SEAO."
+      "resume_comite": "Appel d'offres municipal pour phase II d'aménagement cyclable (Chemin de la Butte) - infrastructure verte alignée avec priorités gouvernementales de mobilité active."
     },
     {
       "fingerprint": "26fc9d1bdf56296b",
@@ -977,7 +999,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Municipalité (Chemin de la Butte)",
+      "owner": "Municipalité (à confirmer)",
       "category": "Génie civil",
       "closing_date": "2026-05-14",
       "pub_date": "2026-04-10",
@@ -985,12 +1007,12 @@
       "estimated_budget": null,
       "prix": "Oui",
       "entrevue": null,
-      "visite_obligatoire": "Oui",
+      "visite_obligatoire": null,
       "date_visite": null,
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "C",
-      "resume_comite": "Surveillance et contrôle qualitatif pour aménagement de piste cyclable (Phase II) – opportunité de service professionnel en infrastructure municipale verte."
+      "resume_comite": "Appel d'offres pour services de surveillance et contrôle qualitatif d'aménagement cyclable (Phase II) au Québec – opportunité potentielle si budget <5M$ ou délai court, à valider via SEAO pour détails."
     },
     {
       "fingerprint": "00ccf5c542327b3f",
@@ -999,7 +1021,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Centre hospitalier régional de Saint-Jérôme (CISSS des Laurentides)",
+      "owner": "Centre intégré de santé et de services sociaux (CISSS) des Laurentides ou organisme de santé régional",
       "category": "Construction d’installations de préparation",
       "closing_date": "2026-05-11",
       "pub_date": "2026-04-09",
@@ -1010,9 +1032,9 @@
       "visite_obligatoire": "Oui",
       "date_visite": null,
       "format_ao": "Format lettre",
-      "categorie_ao": "OS à surveiller",
+      "categorie_ao": "OS à discuter",
       "cote_strategique": "A",
-      "resume_comite": "Appel d'offres pour travaux préparatoires d'agrandissement du plateau technique chirurgical à l'hôpital régional de Saint-Jérôme (client institutionnel majeur); budget et dates à confirmer auprès de SEAO."
+      "resume_comite": "Appel d'offres pour travaux préparatoires d'un agrandissement et réaménagement majeur du plateau technique chirurgical de l'hôpital régional de Saint-Jérôme – projet institutionnel de santé de grande envergure."
     },
     {
       "fingerprint": "63110900ffc6fc70",
@@ -1034,7 +1056,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "C",
-      "resume_comite": "Aménagement extérieur pour établissement de santé (CH) - Source SEAO, détails à confirmer auprès du donneur d'ouvrage."
+      "resume_comite": "Aménagement extérieur pour établissement de santé (CH) - budget et échéancier à confirmer auprès de SEAO."
     },
     {
       "fingerprint": "f5da9870a8fa25fa",
@@ -1056,7 +1078,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "C",
-      "resume_comite": "Aménagement d'un terrain de jeux multisports au Québec via SEAO - budget et détails à confirmer auprès de la source."
+      "resume_comite": "Appel d'offres pour aménagement de terrain multisports au QC via SEAO - budget et détails à confirmer auprès de la source."
     },
     {
       "fingerprint": "8de09a261af0a387",
@@ -1065,7 +1087,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Établissement d'enseignement ou institution (à confirmer via SEAO)",
+      "owner": "Établissement de santé animale (université ou institution)",
       "category": "Services de construction, de réparation et d’entretien d’immeubles",
       "closing_date": "2026-05-07",
       "pub_date": "2026-04-10",
@@ -1077,8 +1099,8 @@
       "date_visite": null,
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
-      "cote_strategique": "C",
-      "resume_comite": "Appel d'offres pour réaménagement d'un département de santé animale au Québec; budget et délais à confirmer via SEAO."
+      "cote_strategique": "B",
+      "resume_comite": "Appel d'offres pour réaménagement d'un département de santé animale en QC; pertinent pour ABCP mais données insuffisantes (budget/délai inconnus) - requiert consultation de la source SEAO."
     },
     {
       "fingerprint": "3e805466ed442af3",
@@ -1087,7 +1109,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "MTMD - Direction générale de l'aéronautique et des transports aériens (DGATA)",
+      "owner": "MTMD (Ministère des Transports et de la Mobilité durable) - DGATA",
       "category": "Services d’ingénierie",
       "closing_date": "2026-05-11",
       "pub_date": "2026-04-10",
@@ -1100,7 +1122,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à discuter",
       "cote_strategique": "A",
-      "resume_comite": "Contrat à exécution sur demande (multiple prestataires) pour études de conception et surveillance d'infrastructures aéroportuaires du MTMD - client institutionnel majeur avec potentiel d'envergure significative."
+      "resume_comite": "Contrat-cadre multi-prestataires du MTMD pour études, plans/devis et surveillance d'infrastructures aéroportuaires; opportunité stratégique avec client institutionnel majeur malgré budget indéterminé."
     },
     {
       "fingerprint": "e1ae0947efe3e1c7",
@@ -1109,7 +1131,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Commission scolaire ou polyvalente Louis-St-Laurent (East Angus)",
+      "owner": "Commission scolaire ou Centre de services scolaire - Polyvalente Louis-St-Laurent (East Angus)",
       "category": "Construction et maintenance de bâtiments ou d’installations",
       "closing_date": "2026-05-12",
       "pub_date": "2026-04-13",
@@ -1122,7 +1144,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "B",
-      "resume_comite": "Réaménagement d'ateliers scientifiques pour institution scolaire en Estrie; opportunité client public institutionnel pertinente pour ABCP."
+      "resume_comite": "Réaménagement des ateliers scientifiques à la Polyvalente Louis-St-Laurent (East Angus) - projet de rénovation institutionnelle en milieu scolaire québécois."
     },
     {
       "fingerprint": "ea05b6b599dbf58b",
@@ -1131,7 +1153,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Inconnu (source SEAO)",
+      "owner": "Inconnu - À vérifier sur SEAO",
       "category": "Construction et maintenance de bâtiments ou d’installations",
       "closing_date": "2026-05-07",
       "pub_date": "2026-04-16",
@@ -1139,12 +1161,12 @@
       "estimated_budget": null,
       "prix": "Oui",
       "entrevue": null,
-      "visite_obligatoire": null,
+      "visite_obligatoire": "Oui",
       "date_visite": null,
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "C",
-      "resume_comite": "Aménagement d'une station de lavage de bateaux à deux sites (Kounak et aéroport) - projet de petite à moyenne envergure en infrastructure spécialisée."
+      "resume_comite": "Aménagement d'une station de lavage de bateaux sur deux sites (Kounak et aéroport) - Appel d'offres à surveiller pour architecture extérieure/aménagement."
     },
     {
       "fingerprint": "744a0d72198183a0",
@@ -1153,7 +1175,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Municipalité ou organisme gouvernemental québécois",
+      "owner": "Organisme public québécois (à confirmer via SEAO)",
       "category": "Génie civil",
       "closing_date": "2026-05-19",
       "pub_date": "2026-04-15",
@@ -1166,7 +1188,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "B",
-      "resume_comite": "Appel d'offres pour services de conception et surveillance d'infrastructures liées à relocalisation de maisons mobiles; pertinent pour ABCP si budget municipal/régional et projet d'envergure modérée."
+      "resume_comite": "AO pour conception d'infrastructures et surveillance de relocalisation de maisons mobiles; opportunité de services professionnels en infrastructure et gestion de projet."
     },
     {
       "fingerprint": "26bea25368fbd6f0",
@@ -1188,7 +1210,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "C",
-      "resume_comite": "Réaménagement et maintien d'actifs pour établissement scolaire; budget et délai à confirmer via SEAO."
+      "resume_comite": "Appel d'offres pour réaménagement et maintien d'actifs d'une école québécoise; budget et dates à confirmer via SEAO."
     },
     {
       "fingerprint": "43fb09d4c877fdcf",
@@ -1197,7 +1219,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "DGATA (Direction générale de l'aviation et des affaires terrestres)",
+      "owner": "DGATA (Aéroports du Québec)",
       "category": "Services d’ingénierie",
       "closing_date": "2026-05-19",
       "pub_date": "2026-04-14",
@@ -1210,7 +1232,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à discuter",
       "cote_strategique": "A",
-      "resume_comite": "CEDPP pour services professionnels en architecture auprès de gouvernement du Québec couvrant les aéroports régionaux du sud du 55e parallèle - opportunité institutionnelle majeure."
+      "resume_comite": "CEDPP pour services d'architecture auprès des aéroports québécois (sud du 55e parallèle) - client institutionnel majeur à potentiel stratégique élevé."
     },
     {
       "fingerprint": "86bd8c53dd87397b",
@@ -1232,7 +1254,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "B",
-      "resume_comite": "Appel d'offres pour aménagement et restauration de sentiers au Parc national du Mont-Orford (client gouvernemental QC) – à suivre pour déterminer la pertinence et les conditions de participation."
+      "resume_comite": "Appel d'offres pour aménagement et restauration de sentiers au Parc national du Mont-Orford (client institutionnel - Parcs Québec) nécessitant expertise en infrastructure récréative."
     },
     {
       "fingerprint": "eebbf5d14e695642",
@@ -1252,9 +1274,9 @@
       "visite_obligatoire": null,
       "date_visite": null,
       "format_ao": "Format lettre",
-      "categorie_ao": "OS à surveiller",
+      "categorie_ao": "OS à discuter",
       "cote_strategique": "B",
-      "resume_comite": "Étude sur les aménagements résilients (QC) - Pertinent pour ABCP, détails (budget, échéance, client) à confirmer auprès de SEAO."
+      "resume_comite": "Appel d'offres pour étude sur aménagements résilients au Québec - informations insuffisantes, consultation SEAO recommandée pour détails complets (budget, client, échéance)."
     },
     {
       "fingerprint": "421cc09e30b49ccc",
@@ -1276,7 +1298,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à discuter",
       "cote_strategique": "B",
-      "resume_comite": "Refonte de plan d'urbanisme et règlement de zonage sur SEAO - opportunité municipale d'envergure à valider (budget et échéance requis)."
+      "resume_comite": "Appel d'offres pour refonte complète du plan d'urbanisme et règlement de zonage via SEAO; mandat stratégique en aménagement urbain mais informations insuffisantes pour évaluation détaillée."
     },
     {
       "fingerprint": "dd0bfab168145619",
@@ -1298,7 +1320,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à discuter",
       "cote_strategique": "A",
-      "resume_comite": "Appel d'offres gouvernemental pour l'architecture cible d'un programme majeur de virtualisation des services aux citoyens québécois; opportunité stratégique auprès d'un client institutionnel de premier plan."
+      "resume_comite": "Appel d'offres pour architecture cible d'un programme gouvernemental de virtualisation des services aux citoyens du Québec; opportunité majeure en gouvernance numérique et transformation de services publics."
     },
     {
       "fingerprint": "53338ffc10afe2e7",
@@ -1319,8 +1341,8 @@
       "date_visite": null,
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
-      "cote_strategique": "B",
-      "resume_comite": "Réaménagement d'intersection urbaine (6e et 5e avenue) - travaux d'infrastructure municipale potentiellement pertinents pour ABCP selon disponibilité d'informations complètes."
+      "cote_strategique": "C",
+      "resume_comite": "Réaménagement d'intersection urbaine — AO municipal québécois potentiellement pertinent pour ABCP, mais données insuffisantes (source SEAO sans résumé détaillé)."
     },
     {
       "fingerprint": "497a44346fbc5200",
@@ -1342,7 +1364,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "B",
-      "resume_comite": "AO municipal pour réaménagement d'aires de jeux, projet typique d'envergure modérée aligné avec nos services en architecture paysagère et espaces publics."
+      "resume_comite": "AO municipal pour réaménagement d'aires de jeux - projet de petite à moyenne envergure typique pour ABCP, à monitorer sur SEAO pour détails complets."
     },
     {
       "fingerprint": "7f1f95e8d1c83f86",
@@ -1364,7 +1386,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "B",
-      "resume_comite": "Rénovations intérieures du siège social de l'OHN – opportunité institutionnelle au Québec à approfondir une fois les détails complets disponibles sur SEAO."
+      "resume_comite": "Rénovations intérieures du siège social de l'OHN (client institutionnel québécois) – budget et délais à confirmer via SEAO."
     },
     {
       "fingerprint": "60913990b4ed6df3",
@@ -1386,7 +1408,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "C",
-      "resume_comite": "Aménagement de classes pour CISA via SEAO - budget et échéances à confirmer auprès de la source."
+      "resume_comite": "Aménagement de classes pour le CISA - secteur éducation, budget et échéance à confirmer via SEAO."
     },
     {
       "fingerprint": "886349084287c44d",
@@ -1395,7 +1417,7 @@
       "summary": "",
       "source": "SEAO",
       "province": "QC",
-      "owner": "Commission scolaire (École secondaire Leblanc et École Jean Lemonde)",
+      "owner": "Commission scolaire (écoles secondaires)",
       "category": "Services d’ingénierie",
       "closing_date": "2026-05-22",
       "pub_date": "2026-04-20",
@@ -1408,7 +1430,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "B",
-      "resume_comite": "Appel d'offres en 2 lots pour services d'architecture : toiture/génératrice à l'école Leblanc et rénovation sanitaires/bloc sportif à l'école Jean Lemonde; client institutionnel scolaire, profil municipal."
+      "resume_comite": "Appel d'offres SEAO pour services d'architecture sur 2 lots (toiture/génératrice école Leblanc + blocs sanitaires/sportif école Jean Lemonde) - secteur institutionnel/scolaire pertinent pour ABCP."
     },
     {
       "fingerprint": "10b149f9598ab035",
@@ -1430,29 +1452,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "B",
-      "resume_comite": "Appel d'offres pour réaménagement du parc Percy-Walters (QC) - budget et détails à confirmer auprès de SEAO."
-    },
-    {
-      "fingerprint": "def20f047cb4158a",
-      "title": "Services de conception et de production de capsules vidéo en motion design",
-      "url": "https://www.seao.ca/OpportunityPublication/rechercheAO/Details/Avis?id=20140534",
-      "summary": "",
-      "source": "SEAO",
-      "province": "QC",
-      "owner": "Vérificateur général du Québec",
-      "category": "Production vidéo",
-      "closing_date": "2026-05-13",
-      "pub_date": "2026-04-22",
-      "ref_id": "20140534",
-      "estimated_budget": null,
-      "prix": null,
-      "entrevue": null,
-      "visite_obligatoire": null,
-      "date_visite": null,
-      "format_ao": null,
-      "categorie_ao": null,
-      "cote_strategique": null,
-      "resume_comite": null
+      "resume_comite": "Réaménagement de parc municipal au Québec (source SEAO) - pertinent pour portfolio espaces publics; détails budget et échéance à obtenir du document complet."
     },
     {
       "fingerprint": "221a2154da4d2624",
@@ -1474,7 +1474,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "B",
-      "resume_comite": "Réfection Phase 3 des finis intérieurs pour école primaire québécoise; projet de rénovation institutionnelle favorisant la spécialisation en milieu scolaire."
+      "resume_comite": "Phase 3 de réfection des finis intérieurs à l'école des Trois-Boisés; opportunité secteur institutionnel/éducation pour client municipal."
     },
     {
       "fingerprint": "0f9d235e5509c695",
@@ -1496,7 +1496,7 @@
       "format_ao": "Format lettre",
       "categorie_ao": "OS à surveiller",
       "cote_strategique": "C",
-      "resume_comite": "Appel d'offres SEAO pour travaux de construction d'aménagement de bureaux administratifs au Québec - informations incomplètes nécessitant consultation directe sur le portail SEAO."
+      "resume_comite": "Appel d'offres SEAO pour aménagement de bureaux administratifs au Québec - informations limitées, à consulter directement sur la plateforme SEAO pour détails complets."
     }
   ]
 }
