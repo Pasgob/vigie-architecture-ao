@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-18T17:56:47.273387",
-  "count": 60,
+  "updated_at": "2026-06-19T12:00:26.770834",
+  "count": 59,
   "projects": [
     {
       "fingerprint": "94e5cd8cbfdbe4b4",
@@ -1180,28 +1180,6 @@
       "closing_date": "2026-06-22",
       "pub_date": "2026-06-04",
       "ref_id": "20149885",
-      "estimated_budget": null,
-      "prix": null,
-      "entrevue": null,
-      "visite_obligatoire": null,
-      "date_visite": null,
-      "format_ao": null,
-      "categorie_ao": null,
-      "cote_strategique": null,
-      "resume_comite": null
-    },
-    {
-      "fingerprint": "54570625edf5155b",
-      "title": "Aménagement de la place publique Ange-Émile-Séguin",
-      "url": "https://www.seao.ca/OpportunityPublication/rechercheAO/Details/Avis?id=20150006",
-      "summary": "",
-      "source": "SEAO",
-      "province": "QC",
-      "owner": "Ville de Vaudreuil-Dorion.",
-      "category": "Aménagement ou réaménagement des places publiques",
-      "closing_date": "2026-06-19",
-      "pub_date": "2026-06-02",
-      "ref_id": "20150006",
       "estimated_budget": null,
       "prix": null,
       "entrevue": null,
