@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-25T19:03:28.525762",
-  "count": 64,
+  "updated_at": "2026-06-26T10:45:46.857522",
+  "count": 63,
   "projects": [
     {
       "fingerprint": "6f52ee97599fd895",
@@ -586,28 +586,6 @@
       "closing_date": "2026-07-17",
       "pub_date": "2026-05-28",
       "ref_id": "20137117",
-      "estimated_budget": null,
-      "prix": null,
-      "entrevue": null,
-      "visite_obligatoire": null,
-      "date_visite": null,
-      "format_ao": null,
-      "categorie_ao": null,
-      "cote_strategique": null,
-      "resume_comite": null
-    },
-    {
-      "fingerprint": "cd09053674041818",
-      "title": "Agrandissement et réaménagement de l’Hôpital de Sept-Îles au 45, rue du Père-Divet, Sept-Îles (Québec) G4R 3N7",
-      "url": "https://www.seao.ca/OpportunityPublication/rechercheAO/Details/Avis?id=20137658",
-      "summary": "",
-      "source": "SEAO",
-      "province": "QC",
-      "owner": "Société québécoise des infrastructures",
-      "category": "Services de construction, de réparation et d’entretien d’immeubles",
-      "closing_date": "2026-06-26",
-      "pub_date": "2026-04-09",
-      "ref_id": "20137658",
       "estimated_budget": null,
       "prix": null,
       "entrevue": null,
