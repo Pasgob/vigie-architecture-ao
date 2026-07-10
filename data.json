@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-07-09T18:46:42.809215",
-  "count": 54,
+  "updated_at": "2026-07-10T10:46:13.853827",
+  "count": 53,
   "projects": [
     {
       "fingerprint": "9e907163cffccd14",
@@ -850,28 +850,6 @@
       "closing_date": "2026-07-13",
       "pub_date": "2026-06-05",
       "ref_id": "20151196",
-      "estimated_budget": null,
-      "prix": null,
-      "entrevue": null,
-      "visite_obligatoire": null,
-      "date_visite": null,
-      "format_ao": null,
-      "categorie_ao": null,
-      "cote_strategique": null,
-      "resume_comite": null
-    },
-    {
-      "fingerprint": "e4df77c81651580d",
-      "title": "Réfection et réaménagement 850 / Polyvalente de Charlesbourg",
-      "url": "https://www.seao.ca/OpportunityPublication/rechercheAO/Details/Avis?id=20151523",
-      "summary": "",
-      "source": "SEAO",
-      "province": "QC",
-      "owner": "Centre de services scolaire des Premières Seigneuries",
-      "category": "Construction et maintenance de bâtiments ou d’installations",
-      "closing_date": "2026-07-10",
-      "pub_date": "2026-06-09",
-      "ref_id": "20151523",
       "estimated_budget": null,
       "prix": null,
       "entrevue": null,
