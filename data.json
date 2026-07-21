@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-07-20T17:27:59.648273",
-  "count": 65,
+  "updated_at": "2026-07-21T10:18:58.692177",
+  "count": 64,
   "projects": [
     {
       "fingerprint": "30c6fe4016ee0185",
@@ -498,28 +498,6 @@
       "closing_date": "2026-08-18",
       "pub_date": "2026-06-02",
       "ref_id": "20148234",
-      "estimated_budget": null,
-      "prix": null,
-      "entrevue": null,
-      "visite_obligatoire": null,
-      "date_visite": null,
-      "format_ao": null,
-      "categorie_ao": null,
-      "cote_strategique": null,
-      "resume_comite": null
-    },
-    {
-      "fingerprint": "69646fb813fcf71d",
-      "title": "Services professionnels en aménagement et en interprétation visant la mise en valeur du parc des Moulins",
-      "url": "https://www.seao.ca/OpportunityPublication/rechercheAO/Details/Avis?id=20148681",
-      "summary": "",
-      "source": "SEAO",
-      "province": "QC",
-      "owner": "Commission de la capitale nationale du Québec .",
-      "category": "Architecture paysagère",
-      "closing_date": "2026-07-21",
-      "pub_date": "2026-05-27",
-      "ref_id": "20148681",
       "estimated_budget": null,
       "prix": null,
       "entrevue": null,
