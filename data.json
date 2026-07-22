@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-07-21T18:12:42.643272",
-  "count": 64,
+  "updated_at": "2026-07-22T10:18:45.759206",
+  "count": 63,
   "projects": [
     {
       "fingerprint": "30c6fe4016ee0185",
@@ -1158,28 +1158,6 @@
       "closing_date": "2026-07-23",
       "pub_date": "2026-07-02",
       "ref_id": "20157260",
-      "estimated_budget": null,
-      "prix": null,
-      "entrevue": null,
-      "visite_obligatoire": null,
-      "date_visite": null,
-      "format_ao": null,
-      "categorie_ao": null,
-      "cote_strategique": null,
-      "resume_comite": null
-    },
-    {
-      "fingerprint": "f2de58c75de2021f",
-      "title": "Acquisition d’un fourgon utilitaire électrique 2026 ou récent avec aménagement",
-      "url": "https://www.seao.ca/OpportunityPublication/rechercheAO/Details/Avis?id=20157277",
-      "summary": "",
-      "source": "SEAO",
-      "province": "QC",
-      "owner": "Ville de Westmount",
-      "category": "Camions fourgons",
-      "closing_date": "2026-07-22",
-      "pub_date": "2026-07-03",
-      "ref_id": "20157277",
       "estimated_budget": null,
       "prix": null,
       "entrevue": null,
