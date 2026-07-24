@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-07-23T17:12:00.108689",
-  "count": 61,
+  "updated_at": "2026-07-24T10:09:44.825820",
+  "count": 60,
   "projects": [
     {
       "fingerprint": "30c6fe4016ee0185",
@@ -806,28 +806,6 @@
       "closing_date": "2026-08-14",
       "pub_date": "2026-06-23",
       "ref_id": "20155411",
-      "estimated_budget": null,
-      "prix": null,
-      "entrevue": null,
-      "visite_obligatoire": null,
-      "date_visite": null,
-      "format_ao": null,
-      "categorie_ao": null,
-      "cote_strategique": null,
-      "resume_comite": null
-    },
-    {
-      "fingerprint": "b410f6ad34224abf",
-      "title": "ACQUISITION D'UN FOURGON SUR MESURE INCLUANT SON AMÉNAGEMENT, SES ÉQUIPEMENTS ET INSTALLATION SUR UN CAMION CHÂSSIS",
-      "url": "https://www.seao.ca/OpportunityPublication/rechercheAO/Details/Avis?id=20155580",
-      "summary": "",
-      "source": "SEAO",
-      "province": "QC",
-      "owner": "Ville de Kirkland",
-      "category": "Camions fourgons",
-      "closing_date": "2026-07-24",
-      "pub_date": "2026-06-25",
-      "ref_id": "20155580",
       "estimated_budget": null,
       "prix": null,
       "entrevue": null,
