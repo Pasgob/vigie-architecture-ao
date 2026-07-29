@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-07-28T17:20:58.346377",
-  "count": 31,
+  "updated_at": "2026-07-29T10:32:03.420320",
+  "count": 30,
   "projects": [
     {
       "fingerprint": "edccb0f3b2744790",
@@ -432,28 +432,6 @@
       "closing_date": "2026-08-19",
       "pub_date": "2026-06-25",
       "ref_id": "20155926",
-      "estimated_budget": null,
-      "prix": null,
-      "entrevue": null,
-      "visite_obligatoire": null,
-      "date_visite": null,
-      "format_ao": null,
-      "categorie_ao": null,
-      "cote_strategique": null,
-      "resume_comite": null
-    },
-    {
-      "fingerprint": "0241d890c3f2edd8",
-      "title": "Conception, fabrication, intégration et mise en service d’un banc d’essai modulaire haute vitesse pour l’évaluation des systèmes d’étanchéité en carbone",
-      "url": "https://www.seao.ca/OpportunityPublication/rechercheAO/Details/Avis?id=20156543",
-      "summary": "",
-      "source": "SEAO",
-      "province": "QC",
-      "owner": "Université Concordia",
-      "category": "Équipement de laboratoire, de mesure, d’observation et d’analyse",
-      "closing_date": "2026-07-29",
-      "pub_date": "2026-06-29",
-      "ref_id": "20156543",
       "estimated_budget": null,
       "prix": null,
       "entrevue": null,
