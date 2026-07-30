@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-07-29T17:07:10.485510",
-  "count": 30,
+  "updated_at": "2026-07-30T10:16:08.306774",
+  "count": 29,
   "projects": [
     {
       "fingerprint": "edccb0f3b2744790",
@@ -168,28 +168,6 @@
       "closing_date": "2026-08-27",
       "pub_date": "2026-07-24",
       "ref_id": "20161191",
-      "estimated_budget": null,
-      "prix": null,
-      "entrevue": null,
-      "visite_obligatoire": null,
-      "date_visite": null,
-      "format_ao": null,
-      "categorie_ao": null,
-      "cote_strategique": null,
-      "resume_comite": null
-    },
-    {
-      "fingerprint": "c367213eda41e07c",
-      "title": "Achat de camions et cubes avec aménagements ",
-      "url": "https://www.seao.ca/OpportunityPublication/rechercheAO/Details/Avis?id=20125701",
-      "summary": "",
-      "source": "SEAO",
-      "province": "QC",
-      "owner": "Ville de Gatineau.",
-      "category": "Camions à plate-forme",
-      "closing_date": "2026-07-30",
-      "pub_date": "2026-02-27",
-      "ref_id": "20125701",
       "estimated_budget": null,
       "prix": null,
       "entrevue": null,
