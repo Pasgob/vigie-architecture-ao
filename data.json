@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-08-10T17:44:40.522956",
-  "count": 71,
+  "updated_at": "2026-08-11T08:45:35.568701",
+  "count": 70,
   "projects": [
     {
       "fingerprint": "7d209f46beb75619",
@@ -1092,28 +1092,6 @@
       "closing_date": "2026-08-17",
       "pub_date": "2026-07-07",
       "ref_id": "20157815",
-      "estimated_budget": null,
-      "prix": null,
-      "entrevue": null,
-      "visite_obligatoire": null,
-      "date_visite": null,
-      "format_ao": null,
-      "categorie_ao": null,
-      "cote_strategique": null,
-      "resume_comite": null
-    },
-    {
-      "fingerprint": "30c6fe4016ee0185",
-      "title": "Aménagement d'une micro-forêt au parc Frank-Selke",
-      "url": "https://www.seao.ca/OpportunityPublication/rechercheAO/Details/Avis?id=20157868",
-      "summary": "",
-      "source": "SEAO",
-      "province": "QC",
-      "owner": "Ville De Montréal - Arrondissement du Sud-Ouest",
-      "category": "Aménagement ou réaménagement de parcs et de jardins",
-      "closing_date": "2026-08-11",
-      "pub_date": "2026-07-13",
-      "ref_id": "20157868",
       "estimated_budget": null,
       "prix": null,
       "entrevue": null,
