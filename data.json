@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-08-11T17:52:07.714670",
-  "count": 70,
+  "updated_at": "2026-08-12T09:04:58.239383",
+  "count": 69,
   "projects": [
     {
       "fingerprint": "7d209f46beb75619",
@@ -1202,28 +1202,6 @@
       "closing_date": "2026-09-29",
       "pub_date": "2026-07-15",
       "ref_id": "20159134",
-      "estimated_budget": null,
-      "prix": null,
-      "entrevue": null,
-      "visite_obligatoire": null,
-      "date_visite": null,
-      "format_ao": null,
-      "categorie_ao": null,
-      "cote_strategique": null,
-      "resume_comite": null
-    },
-    {
-      "fingerprint": "c9fb9c2a68223e3c",
-      "title": "Services professionnels en architecture pour travaux de  maintien d’actif (8 projets) ",
-      "url": "https://www.seao.ca/OpportunityPublication/rechercheAO/Details/Avis?id=20159289",
-      "summary": "",
-      "source": "SEAO",
-      "province": "QC",
-      "owner": "Centre de services scolaire de Montréal / BDA",
-      "category": "Services d’ingénierie",
-      "closing_date": "2026-08-12",
-      "pub_date": "2026-07-15",
-      "ref_id": "20159289",
       "estimated_budget": null,
       "prix": null,
       "entrevue": null,
