@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-08-27T18:41:55.963289",
-  "count": 62,
+  "updated_at": "2026-08-28T19:49:04.934671",
+  "count": 61,
   "projects": [
     {
       "fingerprint": "91b69e505a8d0ef7",
@@ -762,28 +762,6 @@
       "closing_date": "2026-09-04",
       "pub_date": "2026-07-08",
       "ref_id": "20157882",
-      "estimated_budget": null,
-      "prix": null,
-      "entrevue": null,
-      "visite_obligatoire": null,
-      "date_visite": null,
-      "format_ao": null,
-      "categorie_ao": null,
-      "cote_strategique": null,
-      "resume_comite": null
-    },
-    {
-      "fingerprint": "b7d55bad6d1ff835",
-      "title": "Réaménagements mineurs et aménagements d'une cour extérieure.  CRJDA de Rivière-du-Loup",
-      "url": "https://www.seao.ca/OpportunityPublication/rechercheAO/Details/Avis?id=20157951",
-      "summary": "",
-      "source": "SEAO",
-      "province": "QC",
-      "owner": "Santé Québec Bas-Saint-Laurent",
-      "category": "Construction et maintenance de bâtiments ou d’installations",
-      "closing_date": "2026-08-28",
-      "pub_date": "2026-07-07",
-      "ref_id": "20157951",
       "estimated_budget": null,
       "prix": null,
       "entrevue": null,
