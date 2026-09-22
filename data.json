@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-21T19:50:01.748914",
-  "count": 72,
+  "updated_at": "2026-09-22T12:59:23.147514",
+  "count": 71,
   "projects": [
     {
       "fingerprint": "aea00bab9bb13609",
@@ -520,28 +520,6 @@
       "closing_date": "2026-09-23",
       "pub_date": "2026-06-30",
       "ref_id": "20156862",
-      "estimated_budget": null,
-      "prix": null,
-      "entrevue": null,
-      "visite_obligatoire": null,
-      "date_visite": null,
-      "format_ao": null,
-      "categorie_ao": null,
-      "cote_strategique": null,
-      "resume_comite": null
-    },
-    {
-      "fingerprint": "c5eb8f1496b0ebdc",
-      "title": "PDC – Démolition et reconstruction des aménagements du sous-sol",
-      "url": "https://www.seao.ca/OpportunityPublication/rechercheAO/Details/Avis?id=20156937",
-      "summary": "",
-      "source": "SEAO",
-      "province": "QC",
-      "owner": "Société de télédiffusion du Québec.",
-      "category": "Construction et maintenance de bâtiments ou d’installations",
-      "closing_date": "2026-09-22",
-      "pub_date": "2026-06-30",
-      "ref_id": "20156937",
       "estimated_budget": null,
       "prix": null,
       "entrevue": null,
