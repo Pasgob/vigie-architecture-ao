@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-08T20:57:20.515998",
-  "count": 58,
+  "updated_at": "2026-10-09T14:51:14.919059",
+  "count": 57,
   "projects": [
     {
       "fingerprint": "9c5d3877a895eba1",
@@ -806,28 +806,6 @@
       "closing_date": "2026-10-13",
       "pub_date": "2026-09-11",
       "ref_id": "20170258",
-      "estimated_budget": null,
-      "prix": null,
-      "entrevue": null,
-      "visite_obligatoire": null,
-      "date_visite": null,
-      "format_ao": null,
-      "categorie_ao": null,
-      "cote_strategique": null,
-      "resume_comite": null
-    },
-    {
-      "fingerprint": "cf52d7dd0f665cc2",
-      "title": "RÉAMÉNAGEMENT DE LA CAFÉTÉRIA DU PAVILLON LIONEL GAUDREAU",
-      "url": "https://www.seao.ca/OpportunityPublication/rechercheAO/Details/Avis?id=20170414",
-      "summary": "",
-      "source": "SEAO",
-      "province": "QC",
-      "owner": "CÉGEP de Jonquière.",
-      "category": "Construction et maintenance de bâtiments ou d’installations",
-      "closing_date": "2026-10-09",
-      "pub_date": "2026-09-11",
-      "ref_id": "20170414",
       "estimated_budget": null,
       "prix": null,
       "entrevue": null,
